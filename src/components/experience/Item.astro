@@ -1,0 +1,24 @@
+---
+interface Props {
+    position: string;
+    startDate: string;
+    endDate: string;
+    company: string;
+    activities: string;
+}
+
+const { position, startDate, endDate, company, activities } = Astro.props;
+---
+
+<div class="experience__item flex align-center flex-column">
+    <div class="text-center experience__date w-100">
+        <h4>{position}</h4>
+        <p>{startDate} ~ {endDate}</p>
+    </div>
+    <div class="experience__activities">
+        <h4>{company}</h4>
+        <p>
+            {activities}
+        </p>
+    </div>
+</div>

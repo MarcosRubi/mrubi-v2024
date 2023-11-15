@@ -1,0 +1,33 @@
+.about-me {
+	.d-flex{
+		gap:2rem;
+	}
+	svg{
+		z-index: -1;
+	}
+	&__content {
+		h3 {
+			margin: 1rem 0 0.25rem 0;
+		}
+		p{
+			margin: 1rem 0;
+		}
+	}
+	&__img {
+		max-width: 20rem;
+		margin: 0 auto;
+	}
+
+}
+
+@mixin about-me-1024 {
+	.about-me{
+		padding: 4rem 0;
+		.flex-column{
+			flex-direction: row;
+		}
+		&__content {
+			max-width: 60%;
+		}
+	}
+}

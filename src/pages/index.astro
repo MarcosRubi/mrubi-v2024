@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Experience from '../components/Experience.astro';
+---
+
+<Layout title="Portafolio | Marcos Rubí">
+	<Header client:only transition:persist/>
+	<main>
+		<AboutMe/>
+		<Experience/>
+		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+	</main>
+	<Footer />
+</Layout>

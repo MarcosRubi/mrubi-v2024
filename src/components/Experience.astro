@@ -1,0 +1,23 @@
+---
+import Item from "./experience/Item.astro";
+import experience from "../data/esperience.json";
+---
+
+<section class="experience" id="experience">
+  <div class="container">
+    <h2 class="text-center">Experiencia</h2>
+    {
+      experience.map((data) => {
+        return (
+          <Item
+            position={data.position}
+            startDate={data.startDate}
+            endDate={data.endDate}
+            company={data.company}
+            activities={data.activities}
+          />
+        );
+      })
+    }
+  </div>
+</section>
