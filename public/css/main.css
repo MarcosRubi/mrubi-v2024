@@ -613,24 +613,32 @@ section .container {
   margin-top: 0.5em;
 }
 
-.timeline .timeline-card-content {
+.timeline h2 {
+  margin-bottom: 1rem;
+}
+.timeline li.splide__slide {
+  background-color: var(--bg-footer);
+}
+.timeline .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.timeline .content {
   padding: 1rem;
 }
-.timeline .timeline-card-content .card-description {
-  margin: 0;
+.timeline .content span {
+  color: var(--color-hover);
+  font-size: 1.25rem;
+  font-weight: bold;
 }
-.timeline .timeline-card-content .card-description span, .timeline .timeline-card-content .card-description p {
-  color: var(--text-color);
+.timeline .content h3,
+.timeline .content p {
+  margin: 1rem 0;
 }
-.timeline .timeline-item-title.active {
-  padding: 0.5rem;
-}
-.timeline .timeline-vertical-circle div {
-  height: 32px;
-  width: 32px;
-}
-.timeline .rc-card-title {
-  color: var(--text-color);
+.timeline .img,
+.timeline .content {
+  flex-basis: 50%;
 }
 
 footer {
@@ -868,11 +876,12 @@ textarea {
   .menu__footer .btn {
     font-size: 1rem;
   }
-  .timeline .timeline-card-content .card-media-wrapper {
-    height: 20rem;
+  .timeline .flex-column {
+    flex-direction: row;
+    height: 100%;
   }
-  .timeline .timeline-card-content .rc-card-title {
-    font-size: 1.5rem;
+  .timeline .content {
+    align-self: center;
   }
   footer .container {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
