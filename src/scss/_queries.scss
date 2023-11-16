@@ -1,6 +1,7 @@
 @media (min-width:768px) {
     @include base-768;
     @include header-768;
+    @include timeline-768;
     @include footer-768;
 }
 @media (min-width:1024px) {

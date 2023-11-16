@@ -4,6 +4,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Experience from '../components/Experience.astro';
+import Timeline from '../components/Timeline.jsx';
 ---
 
 <Layout title="Portafolio | Marcos Rubí">
@@ -11,7 +12,7 @@ import Experience from '../components/Experience.astro';
 	<main>
 		<AboutMe/>
 		<Experience/>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<Timeline client:only/>
 	</main>
 	<Footer />
 </Layout>

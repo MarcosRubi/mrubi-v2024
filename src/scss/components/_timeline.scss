@@ -1,0 +1,38 @@
+.timeline {
+    .timeline-card-content {
+        padding: 1rem;
+        
+        .card-description {
+            margin: 0;
+            
+            span, p {
+                color: var(--text-color);
+            }
+        }
+        
+    }
+    .timeline-item-title.active{
+        padding: .5rem;
+    }
+    .timeline-vertical-circle div{
+        height: 32px;
+        width: 32px;
+    }
+
+    .rc-card-title{
+        color: var(--text-color);
+    }
+}
+
+@mixin timeline-768{
+    .timeline{
+        .timeline-card-content{
+            .card-media-wrapper{
+                height: 20rem;
+            }
+            .rc-card-title{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

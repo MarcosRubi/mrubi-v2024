@@ -256,7 +256,9 @@ section {
 .block {
     display: block;
 }
-
+.text-hover{
+    color: var(--color-hover);
+}
 
 .icon-close {
     height: 32px;

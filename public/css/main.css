@@ -317,6 +317,10 @@ section .container {
   display: block;
 }
 
+.text-hover {
+  color: var(--color-hover);
+}
+
 .icon-close {
   height: 32px;
   width: 32px;
@@ -609,6 +613,26 @@ section .container {
   margin-top: 0.5em;
 }
 
+.timeline .timeline-card-content {
+  padding: 1rem;
+}
+.timeline .timeline-card-content .card-description {
+  margin: 0;
+}
+.timeline .timeline-card-content .card-description span, .timeline .timeline-card-content .card-description p {
+  color: var(--text-color);
+}
+.timeline .timeline-item-title.active {
+  padding: 0.5rem;
+}
+.timeline .timeline-vertical-circle div {
+  height: 32px;
+  width: 32px;
+}
+.timeline .rc-card-title {
+  color: var(--text-color);
+}
+
 footer {
   background-color: var(--bg-footer);
   transition: background-color 0.3s ease-in-out;
@@ -843,6 +867,12 @@ textarea {
   }
   .menu__footer .btn {
     font-size: 1rem;
+  }
+  .timeline .timeline-card-content .card-media-wrapper {
+    height: 20rem;
+  }
+  .timeline .timeline-card-content .rc-card-title {
+    font-size: 1.5rem;
   }
   footer .container {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
