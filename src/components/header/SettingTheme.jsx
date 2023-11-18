@@ -8,7 +8,7 @@ function SettingTheme () {
     document.querySelector('.menu__preset-colors').classList.toggle('show')
   }
 
-  const { changeColor } = useColorSelectStore(state => state)
+  const { setColor } = useColorSelectStore(state => state)
 
   return (
     <div className='menu__setting relative'>
@@ -19,26 +19,26 @@ function SettingTheme () {
         <p>Seleccione el tema</p>
         <ul>
           <li className='w-100'>
-            <div onClick={() => { changeColor('default') }}>
+            <div onClick={() => { setColor('default') }}>
               <span className='theme-color' style={{ background: '#78A6C8' }} />
               <span className='theme-color' style={{ background: '#E65C4F' }} />
             </div>
           </li>
           <li className='w-100'>
-            <div onClick={() => { changeColor('purple') }}>
+            <div onClick={() => { setColor('purple') }}>
               <span className='theme-color' style={{ background: '#9A9CEA' }} />
               <span className='theme-color' style={{ background: '#A2DCEE' }} />
             </div>
           </li>
           <li className='w-100'>
 
-            <div onClick={() => { changeColor('blue') }}>
+            <div onClick={() => { setColor('blue') }}>
               <span className='theme-color' style={{ background: '#3959a2' }} />
               <span className='theme-color' style={{ background: '#a8dbd2' }} />
             </div>
           </li>
           <li className='w-100'>
-            <div onClick={() => { changeColor('green') }}>
+            <div onClick={() => { setColor('green') }}>
               <span className='theme-color' style={{ background: '#53D2B2' }} />
               <span className='theme-color' style={{ background: '#FFE3B3' }} />
             </div>

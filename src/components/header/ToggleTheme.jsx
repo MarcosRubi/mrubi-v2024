@@ -40,7 +40,7 @@ export const IconMoon = () => {
 }
 
 function ToggleTheme () {
-  const { theme, toggleTheme } = useThemeStore((state) => state)
+  const { theme, setTheme } = useThemeStore((state) => state)
   const { color } = useColorSelectStore((state) => state)
   const isDark = theme === 'dark'
 
@@ -56,7 +56,7 @@ function ToggleTheme () {
         name='toggle-theme'
         id='toggle-theme'
         onClick={() => {
-          toggleTheme()
+          setTheme()
         }}
         defaultChecked={isDark}
       />

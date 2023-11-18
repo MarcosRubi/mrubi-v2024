@@ -4,6 +4,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.jsx';
 import Timeline from '../components/Timeline.jsx';
 ---
 
@@ -11,6 +12,7 @@ import Timeline from '../components/Timeline.jsx';
 	<Header client:only transition:persist/>
 	<main>
 		<AboutMe/>
+		<Projects client:only/>
 		<Experience/>
 		<Timeline client:only/>
 	</main>

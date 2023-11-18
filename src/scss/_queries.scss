@@ -2,6 +2,7 @@
     @include base-768;
     @include header-768;
     @include timeline-768;
+    @include projects-768;
     @include footer-768;
 }
 @media (min-width:1024px) {
@@ -9,9 +10,15 @@
     @include header-1024;
     @include about-me-1024;
     @include experience-1024;
+    @include projects-1024;
     @include footer-1024;
 }
 @media (min-width:1200px) {
     @include base-1200;
+    @include projects-1200;
     @include footer-1200;
+}
+
+@media (min-width:1440px) {
+    @include projects-1440;
 }
