@@ -1,0 +1,44 @@
+.carousel-project {
+    &-images {
+        padding-top: 20px;
+    }
+    .carousel-main-image{
+        margin: 1rem auto !important;
+        .btn{
+            display: none;
+        }
+    }
+    .carousel-images{
+        gap:1rem;
+    }
+
+    img {
+        object-fit: cover;
+    }
+    .btn:hover{
+        transform: scale(1.5);
+    }
+    
+    .thumbnail {
+        img{
+            filter: contrast(.75);
+            cursor: pointer;
+        }
+        .clicked {
+            filter: contrast(1);
+            border: 3px solid var(--color-hover);
+    }
+    
+    }
+}
+
+@mixin carousel-1024{
+    .carousel-project{
+        .carousel-main-image{
+            .btn{
+                display: block;
+            }
+        }
+    }
+}
+

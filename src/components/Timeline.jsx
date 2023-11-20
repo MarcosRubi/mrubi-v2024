@@ -1,4 +1,3 @@
-import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import data from '../data/timeline.json'

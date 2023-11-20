@@ -1,6 +1,7 @@
 @media (min-width:768px) {
     @include base-768;
     @include header-768;
+    @include banner-768;
     @include timeline-768;
     @include projects-768;
     @include footer-768;
@@ -8,9 +9,11 @@
 @media (min-width:1024px) {
     @include base-1024;
     @include header-1024;
+    @include banner-1024;
     @include about-me-1024;
     @include experience-1024;
     @include projects-1024;
+    @include carousel-1024;
     @include footer-1024;
 }
 @media (min-width:1200px) {

@@ -17,6 +17,7 @@ function Header () {
       }, 100)
     }
   })
+
   return (
     <header className={`menu fixed w-100 ${sticky}`}>
       <div className='container flex align-center justify-between'>

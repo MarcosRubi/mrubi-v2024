@@ -1,0 +1,92 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import Layout from "../../layouts/Layout.astro";
+
+import dataProjects from "../../data/projects.json";
+import Technologies from "../../components/projects/Technologies";
+import FormatedDate from "../../components/projects/FormatedDate";
+import Carousel from "../../components/project/Carousel";
+
+const { slug } = Astro.params;
+
+export const getStaticPaths = (() => {
+    return dataProjects.map((project) => ({
+        params: { slug: project.slug },
+    }));
+}) satisfies GetStaticPaths;
+
+const project = dataProjects.filter((project) => project.slug === slug)[0];
+---
+
+<Layout title={`Proyecto ${project.title} | Marcos Rubí`}>
+    <main>
+        <section class="projects">
+            <div class="container">
+                <div class="back">
+                    <button
+                        class="btn btn-secondary"
+                        onclick="window.history.back()"
+                        ><span>Ir a proyectos</span>
+                    </button>
+                </div>
+                <div class="project view">
+                    <Carousel client:only project={project.routeImages} />
+                    <h3>{project.title}</h3>
+                    <div class="technologies">
+                        <h4>Tecnología empleada</h4>
+                        <Technologies technologies={project.technologies} />
+                    </div>
+                    <div class="buttons">
+                        <h4>Enlaces</h4>
+                        <div class="flex flex-wrap">
+                            <a
+                                href={project.urlDemo}
+                                target="_blank"
+                                class="btn btn-primary"
+                                rel="noreferrer"><span>Ver Demo</span></a
+                            >
+                            <a
+                                href={project.urlRepo}
+                                target="_blank"
+                                class="btn btn-secondary"
+                                rel="noreferrer"><span>Ver Código</span></a
+                            >
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <h4>Tiempo de desarrollo</h4>
+                        <div class="flex align-center flex-wrao">
+                            <span>Inicio:</span>
+                            <FormatedDate date={project.startDate} />
+                        </div>
+                        <div class="flex align-center flex-wrap">
+                            <span>Completado:</span>
+                            <FormatedDate date={project.endDate} />
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h4>Descripción del proyecto</h4>
+                        <p set:html={project.description} />
+                    </div>
+                    {
+                        project.learning !== "" && (
+                            <div class="learning">
+                                <h4>Aprendizaje obtenido</h4>
+                                <p set:html={project.learning} />
+                            </div>
+                        )
+                    }
+                    {
+                        project.difficulties !== "" && (
+                            <div class="difficulties">
+                                <h4>Dificultades en el desarrollo</h4>
+                                <p set:html={project.difficulties} />
+                            </div>
+                        )
+                    }
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

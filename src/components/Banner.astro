@@ -1,0 +1,77 @@
+---
+import IconDownload from "../utils/IconDownload.astro";
+import IconHTML from "../utils/IconHTML.astro";
+import IconCSS from "../utils/IconCSS.astro";
+import IconGitHub from "../utils/IconGitHub.astro";
+import IconSASS from "../utils/IconSASS.astro";
+import IconBootstrap from "../utils/IconBootstrap.astro";
+import IconJavaScript from "../utils/IconJavaScript.astro";
+import IconReact from "../utils/IconReact.astro";
+import IconPHP from "../utils/IconPHP.astro";
+import IconMySQL from "../utils/IconMySQL.astro";
+
+---
+
+    <section  class={` banner relative text-center`}>
+      <div class='flex align-center flex-column justify-center container relative'>
+        <div class='banner__about-me'>
+          <h1>Hola, soy <span>Marcos Rubí</span></h1>
+          <p>Técnico en sistemas y redes, actualmente estoy cursando último año de ingeniería en sistemas y redes.</p>
+          <a href='/documents/CV-Marcos-Rubi.pdf' download='CV - Marcos Rubí' class='btn btn-primary'>
+            <span>Descargar CV</span>
+            <IconDownload />
+          </a>
+        </div>
+        <div class='banner__skills'>
+          <h2>Habilidades</h2>
+          <div class='skill-container flex align-center justify-center'>
+            <div class='flex flex-column-sm'>
+              <div class='skill relative'>
+                <IconHTML />
+                <span class='tooltip absolute'>HTML5</span>
+              </div>
+            </div>
+            <div class='flex flex-column-sm'>
+              <div class='skill relative'>
+                <IconCSS />
+                <span class='tooltip absolute'>CSS3</span>
+              </div>
+              <div class='skill relative'>
+                <IconSASS />
+                <span class='tooltip absolute'>SASS</span>
+              </div>
+              <div class='skill relative'>
+                <IconBootstrap />
+                <span class='tooltip absolute'>Bootstrap</span>
+              </div>
+            </div>
+            <div class='flex flex-column-sm'>
+              <div class='skill relative'>
+                <IconJavaScript />
+                <span class='tooltip absolute'>JavaScript</span>
+              </div>
+              <div class='skill relative'>
+                <IconReact />
+                <span class='tooltip absolute'>React.js</span>
+              </div>
+            </div>
+            <div class='d-flex flex-column-sm'>
+              <div class='skill relative'>
+                <IconGitHub />
+                <span class='tooltip absolute'>Git</span>
+              </div>
+            </div>
+            <div class='d-flex flex-column-sm'>
+              <div class='skill relative'>
+                <IconPHP />
+                <span class='tooltip absolute'>PHP</span>
+              </div>
+              <div class='skill relative'>
+                <IconMySQL />
+                <span class='tooltip absolute'>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

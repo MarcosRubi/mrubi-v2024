@@ -127,7 +127,8 @@ section {
 .justify-between{
     justify-content: space-between;
 }
-.flex-column {
+.flex-column,
+.flex-column-sm {
     flex-direction: column;
 }
 
@@ -308,6 +309,9 @@ section {
 @mixin base-768{
     section .container,footer .container {
         padding: 4rem 0 4rem 4rem
+    }
+    .flex-column-sm{
+        flex-direction: row;
     }
 }
 

@@ -1,10 +1,5 @@
 .projects {
 
-  &.modal-active .back,
-  &.modal-active .view {
-    filter: blur(10px) opacity(0.5);
-  }
-
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -168,32 +163,10 @@
     padding: 1rem;
   }
 
-  .show-more.hide,
-  .show-less.hide {
-    visibility: hidden;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    opacity: 0;
-  }
-
-  .show-more,
-  .show-less {
-    visibility: visible;
-    width: 100%;
-    margin: 1rem;
-    max-width: 14rem;
-    opacity: 1;
-  }
-
-  .btn-updates {
-    margin: 2rem 0;
-    flex-direction: column;
-  }
-
   .technologies {
     gap: 0.25rem;
     margin: 1rem 0;
+    max-width: 90%;
 
     span {
       font-size: 0.9rem;
@@ -221,10 +194,24 @@
     font-size: 0.9rem;
     display: inline-block;
   }
-
-  .modal {
-    left: 0;
+  .show-more.hide,
+  .show-less.hide {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    opacity: 0;
   }
+
+  .show-more,
+  .show-less {
+    visibility: visible;
+    width: 100%;
+    margin: 1rem;
+    max-width: 14rem;
+    opacity: 1;
+  }
+
 }
 
 .project {
@@ -265,7 +252,7 @@
   .buttons {
     margin: 1rem 0;
 
-    .d-flex {
+    .flex {
       gap: 1rem;
       margin: 0;
     }
@@ -296,7 +283,7 @@
     display: grid;
     gap: 1rem;
 
-    .d-flex,
+    .flex,
     .buttons,
     .description {
       margin: 0;
@@ -341,69 +328,19 @@
       max-width: 20.2rem;
     }
 
-    .modal {
-      .buttons {
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        padding: 0 0 0 4rem;
-      }
-    }
-
     .btn-updates {
       flex-flow: row;
     }
   }
 
   .project {
-    &.view {
-      grid-template-areas:
-        "img title"
-        "img buttons"
-        "img buttons"
-        "img technologies"
-        "learning time"
-        "learning time"
-        "learning description"
-        "difficulties description "
-        "difficulties description";
-    }
-
-    h3 {
-      grid-area: title;
-    }
-
-    .img {
-      grid-area: img;
-    }
-
-    .description {
-      grid-area: description;
-    }
-
-    .technologies {
-      grid-area: technologies;
-    }
-
     .buttons {
-      grid-area: buttons;
 
       .btn {
         width: 8rem;
       }
     }
 
-    .learning {
-      grid-area: learning;
-    }
-
-    .difficulties {
-      grid-area: difficulties;
-    }
-
-    .dates {
-      grid-area: time;
-    }
   }
 }
 
@@ -416,6 +353,8 @@
 
   .project {
     &.view {
+      
+
       h3 {
         font-size: 2.5rem;
       }
@@ -436,18 +375,53 @@
 }
 
 @mixin projects-1200 {
+  .projects{
+    .back{
+      margin-left: 4rem;
+    }
+  }
   .project {
     &.view {
       grid-template-areas:
-        "img title"
-        "img buttons"
-        "img technologies"
-        "img time"
-        "img time"
-        "learning description"
-        "difficulties description "
-        "difficulties description";
+      "img img"
+      "title title"
+      "technologies description "
+      "buttons learning "
+      "time difficulties";
+        h3 {
+          grid-area: title;
+        }
+  
+        .img {
+          grid-area: img;
+        }
+  
+        .description {
+          grid-area: description;
+        }
+  
+        .technologies {
+          grid-area: technologies;
+        }
+  
+        .buttons {
+          grid-area: buttons;
+        }
+  
+        .learning {
+          grid-area: learning;
+        }
+  
+        .difficulties {
+          grid-area: difficulties;
+        }
+  
+        .dates {
+          grid-area: time;
+        }
+        
     }
+
   }
 }
 
@@ -456,5 +430,50 @@
     &__container {
       grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
     }
+  }
+  .project {
+    &.view {
+      grid-template-areas:
+        "img title"
+        "img buttons"
+        "img technologies"
+        "img time"
+        "img time"
+        "img description"
+        "img learning "
+        "img difficulties";
+        h3 {
+          grid-area: title;
+        }
+  
+        .img {
+          grid-area: img;
+        }
+  
+        .description {
+          grid-area: description;
+        }
+  
+        .technologies {
+          grid-area: technologies;
+        }
+  
+        .buttons {
+          grid-area: buttons;
+        }
+  
+        .learning {
+          grid-area: learning;
+        }
+  
+        .difficulties {
+          grid-area: difficulties;
+        }
+  
+        .dates {
+          grid-area: time;
+        }
+    }
+
   }
 }

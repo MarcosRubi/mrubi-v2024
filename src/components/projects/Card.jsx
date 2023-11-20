@@ -9,7 +9,7 @@ function Card ({ project }) {
         className='project__img block'
       >
         <img
-          src={project.routeImages.preview}
+          src={project.routeImages[0].url}
           alt={`Foto del proyecto ${project.title}`}
           className='flex'
         />
