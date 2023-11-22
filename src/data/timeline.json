@@ -3,61 +3,61 @@
         "date": "2017",
         "cardTitle": "Inicio de la carrera: Técnico en sistemas y redes.",
         "cardDetailedText": ["En el primer año descubrí mi pasión por el desarrollo web en la asignatura de diseño de páginas web.","También en este año, creé mi primer \"sitio web\", una radio la cual no es responsive."],
-        "url": "https://mrubi.vercel.app/images/timeline/inicio-de-la-carrera-2017.webp"
+        "url": "/images/timeline/inicio-de-la-carrera-2017.webp"
     },
     {
         "date": "2018",
         "cardTitle": "Fin de la carrera: Técnico en sistemas y redes.",
         "cardDetailedText": ["En este año aprendí a usar AJAX, PHP con programación orientada a objetos (POO) y los conceptos básicos de MySQL." , "Estos conocimientos me ayudaron a crear la red social pintelogen el año 2022."],
-        "url": "https://mrubi.vercel.app/images/timeline/fin-de-la-carrera-2018.webp"
+        "url": "/images/timeline/fin-de-la-carrera-2018.webp"
     },
     {
         "date": "Enero - Octubre 2019",
         "cardTitle": "Cursos en línea enfocados a maquetación web.",
         "cardDetailedText": ["Continué mi aprendizaje de manera audodidacta con cursos gratuitos de HTML y CSS de internet, incluyendo el uso de pre-procesadores como Pug y SCSS. Además, comence a usar GitHub y realize mi primer menú responsive."],
-        "url": "https://mrubi.vercel.app/images/timeline/primer-menu-responsive.webp"
+        "url": "/images/timeline/primer-menu-responsive.webp"
     },
     {
         "date": "Noviembre 2019 - Marzo 2020",
         "cardTitle": "Síndrome del impostor",
         "cardDetailedText": ["Comencé un curso de JavaScript, pero al llegar a la sección de aprender un framework como Angular, me encontraba con dificultades y no podía entender los conceptos, lo que me llevó a convencerme de que no era apto para programar, y dejé de estudiar."],
-        "url": "https://mrubi.vercel.app/images/timeline/sindrome-del-impostor.webp"
+        "url": "/images/timeline/sindrome-del-impostor.webp"
     },
     {
         "date": "Enero - Junio 2020",
         "cardTitle": "Inicio de: Ingeniería en sistemas y redes",
         "cardDetailedText": ["En mi primer ciclo curse la asignatura Programación Computacional IV, enfocada en PHP, POO y MVC.", "A pesar de seguir convencido de que no era apto para programar, la pasión que siento por el desarrollo web me llevó a seguirlo estudiando como un pasatiempo."],
-        "url": "https://mrubi.vercel.app/images/timeline/inicio-ing-sistemas-2020.webp"
+        "url": "/images/timeline/inicio-ing-sistemas-2020.webp"
     },
     {
         "date": "Julio - Diciembre 2020",
         "cardTitle": "Retomo el curso de JavaScript.",
         "cardDetailedText": ["Durante este tiempo, creé proyectos simples enfocándome en hacerlos responsive. Completé un curso de CSS y otro de JavaScript, el curso que antes me había derrotado.", "En las últimas semanas de diciembre realicé 4 páginas web totalmente responsivas, 2 de ellas utilizando css puro y las otras 2 utilizando Booststrap."],
-        "url": "https://mrubi.vercel.app/images/timeline/cursos-en-linea-maquetacion-web.webp"
+        "url": "/images/timeline/cursos-en-linea-maquetacion-web.webp"
     },
     {
         "date": "2021",
         "cardTitle": "Práctica y más práctica.",
         "cardDetailedText": ["En mayo realice mi primer diseño de mi portafolio personal y de vez en cuando creaba proyectos simples en codepen donde me centraba en realizar un buen responsive y dominar flexbox para ello."],
-        "url": "https://mrubi.vercel.app/images/timeline/codepen-2021.webp"
+        "url": "/images/timeline/codepen-2021.webp"
     },
     {
         "date": "Enero - Julio 2022",
         "cardTitle": "Pintelog: una red social.",
         "cardDetailedText": ["Repase AJAX, PHP usando POO y MySQL. Para ello, en febrero creé una lista de tareas con paginación.", "Durante el interciclo decidí realizar pintelog, una red social. Quería evaluar mi progreso y asegurarme de que estaba en el camino correcto."],
-        "url": "https://mrubi.vercel.app/images/projects/preview/pintelog-preview.webp"
+        "url": "/images/projects/preview/pintelog-preview.webp"
     },
     {
         "date": "Agosto - Diciembre 2022",
         "cardTitle": "Frontend Mentor, React y APIs.",
         "cardDetailedText": ["Conocí Frontend Mentor y comencé a realizar sus ejercicios, completando 30 desafíos en un periodo de 5 meses.", "Mejoré mi portafolio, comencé con React, APIs, y creé una API con Node.js y Express que scrapea datos en plataformas de compras de videojuegos y creé GamesScraping."],
-        "url": "https://mrubi.vercel.app/images/timeline/frontend-react-apis.webp"
+        "url": "/images/timeline/frontend-react-apis.webp"
     },
     {
         "date": "2023",
-        "cardTitle": "Inico del mundo laboral.",
+        "cardTitle": "Inicio del mundo laboral.",
         "cardDetailedText": ["Durante seis meses, desempeñé labores en Sortos Travel Multiservices mientras llevaba a cabo mi servicio social en el CNR y simultáneamente proseguía con mis estudios de último año.", "Luego me contactaron para realizar un sistema de control de préstamos el cual termine en noviembre."],
-        "url": "https://mrubi.vercel.app/images/timeline/actualidad.webp"
+        "url": "/images/timeline/actualidad.webp"
     }
     
 ]

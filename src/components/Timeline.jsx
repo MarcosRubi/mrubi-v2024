@@ -10,7 +10,7 @@ function Timeline () {
   }
   return (
     <section className='timeline'>
-      <div className='container'>
+      <div className='container' id='my-process'>
         <h2 className='text-center'>Mi proceso</h2>
         <Splide aria-label='Mi proceso de aprendizaje' options={options}>
           {

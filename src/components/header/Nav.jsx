@@ -45,12 +45,11 @@ function Nav () {
         </div>
         <nav className='container'>
           <ul className='flex align-center flex-column-sm text-center'>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Sobre Mí</a></li>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Proyectos</a></li>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Experiencia</a></li>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Certificados</a></li>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Mi Proceso</a></li>
-            <li className='w-100'><a href='#' className='w-100 inline-block'>Contactar</a></li>
+            <li className='w-100'><a href='#about-me' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Sobre Mí</a></li>
+            <li className='w-100'><a href='#projects' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Proyectos</a></li>
+            <li className='w-100'><a href='#experience' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Experiencia</a></li>
+            <li className='w-100'><a href='#my-process' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Mi Proceso</a></li>
+            <li className='w-100'><a href='#contact' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Contactar</a></li>
           </ul>
         </nav>
         <div className='menu__footer'>
