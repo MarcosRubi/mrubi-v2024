@@ -19,10 +19,10 @@ function Timeline () {
                 <SplideSlide key={id}>
                   <div className='flex items-center flex-column'>
                     <div className='img'>
-                      <img src={timeline.url} alt='Image 1' />
+                      <img src={timeline.url} alt={`Foto ilustrativa de: ${timeline.cardTitle}`} loading='lazy' />
                     </div>
                     <div className='content'>
-                      <span className=' block'>{timeline.date}</span>
+                      <span className='block'>{timeline.date}</span>
                       <h3>{timeline.cardTitle}</h3>
                       {timeline.cardDetailedText.map((text, index) => (
                         <p key={index}>{text}</p>

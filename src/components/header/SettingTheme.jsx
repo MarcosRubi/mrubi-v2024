@@ -12,7 +12,7 @@ function SettingTheme () {
 
   return (
     <div className='menu__setting relative'>
-      <button className='btn' onClick={handleOnClick}>
+      <button className='btn' aria-label='Abrir opciones para la paleta de colores' onClick={handleOnClick}>
         <IconSetting />
       </button>
       <div className='menu__preset-colors absolute w-100'>

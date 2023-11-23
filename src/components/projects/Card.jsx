@@ -12,6 +12,7 @@ function Card ({ project }) {
           src={project.routeImages[0].url}
           alt={`Foto del proyecto ${project.title}`}
           className='flex'
+          loading='lazy'
         />
       </a>
       <div className='project__content'>

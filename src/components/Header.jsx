@@ -21,8 +21,8 @@ function Header () {
   return (
     <header className={`menu fixed w-100 ${sticky}`}>
       <div className='container flex align-center justify-between'>
-        <a href='/' className='logo'>
-          <img src='/logo.svg' alt='' />
+        <a href='/' className='logo' aria-label='Ir a la página de inicio'>
+          <img src='/logo.svg' alt='Logo de Marcos Rubí - Gema Ruby' loading='eager' />
         </a>
         <Nav />
         <ToggleTheme />

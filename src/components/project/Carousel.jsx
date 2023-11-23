@@ -31,7 +31,7 @@ function ImageSlider ({ project }) {
     <div className='carousel-project flex flex-column align-center img'>
       <div className=' carousel-main-image flex'>
         <button className='btn' onClick={handlePrevious}><ArrowLeft /></button>
-        <img src={wordData.url} height='500' width='800' className='main-image-carousel' />
+        <img src={wordData.url} height='500' width='725' className='main-image-carousel' />
         <button className='btn ' onClick={handleNext}><ArrowRight /></button>
       </div>
       <div className='carousel-images flex justify-center flex-wrap'>
