@@ -4,7 +4,12 @@
     "title": "Poppo's Pizzeria",
     "slug": "poppos-pizzeria",
     "description": "Demo para una pizzería en Nueva York.",
-    "technologies": ["HTML & CSS", "SCSS", "JavaScript", "Astro"],
+    "technologies": [
+      "HTML & CSS",
+      "SCSS",
+      "JavaScript",
+      "Astro"
+    ],
     "startDate": "2023-06-15",
     "endDate": "2023-06-29",
     "learning": "Usando Astro para la estructura de la página web junto a las librerías de <a href='https://lokeshdhakar.com/projects/lightbox2/' target='_blank'>LightBox Plus</a> y <a href='https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html' target='_blank'>OWL Carousel</a>.",
@@ -13,19 +18,19 @@
     "urlRepo": "https://github.com/MarcosRubi/poppops-pizzeria",
     "routeImages": [
       {
-        "id":0,
+        "id": 1,
         "url": "/images/projects/preview/poppops-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/poppops-sm.webp"
       },
       {
-        "id":2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/poppops-md.webp"
       },
       {
-        "id":3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/poppops-xl.webp"
       }
     ]
@@ -35,7 +40,11 @@
     "title": "Bookmark landing page",
     "slug": "bookmark-landing-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "SCSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "SCSS",
+      "JavaScript"
+    ],
     "startDate": "2022-12-24",
     "endDate": "2022-12-24",
     "learning": "",
@@ -44,19 +53,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Bookmark-landing-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/bookmark-landing-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/bookmark-landing-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/bookmark-landing-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/bookmark-landing-page-xl.webp"
       }
     ]
@@ -66,7 +75,10 @@
     "title": "Loopstudios landing page",
     "slug": "loopstudios-landing-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-12-20",
     "endDate": "2022-12-20",
     "learning": "",
@@ -75,19 +87,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Loopstudios-landing-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/loopstudios-landing-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/loopstudios-landing-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/loopstudios-landing-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/loopstudios-landing-page-xl.webp"
       }
     ]
@@ -97,7 +109,10 @@
     "title": "Four card feature section",
     "slug": "four-card-feature-section",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-12-13",
     "endDate": "2022-12-13",
     "learning": "",
@@ -106,19 +121,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Four-card-feature-section",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/four-card-feature-section-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/four-card-feature-section-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/four-card-feature-section-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/four-card-feature-section-xl.webp"
       }
     ]
@@ -128,7 +143,11 @@
     "title": "Todo app",
     "slug": "todo-app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React"
+    ],
     "startDate": "2022-10-30",
     "endDate": "2022-11-05",
     "learning": "Aprendí a usar la librería de <a href='https://www.youtube.com/watch?v=bZsMWorjtFI' target='_blank'> react-beautiful-dnd</a> para reordenar los elemento de un array con arrastrar y soltar el elemento. ",
@@ -137,19 +156,19 @@
     "urlRepo": "https://github.com/MarcosRubi/todo-app",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/todo-app-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/todo-app-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/todo-app-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/todo-app-xl.webp"
       }
     ]
@@ -159,7 +178,11 @@
     "title": "Notifications page",
     "slug": "notification-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React"
+    ],
     "startDate": "2022-09-18",
     "endDate": "2022-09-18",
     "learning": "Fue de los primeros proyectos que realicé utilizando <a href='https://es.reactjs.org/' target='_blank'> react.js</a> y comprendí el uso de los hooks useEffect, useState, useRef y useContext. ",
@@ -168,19 +191,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Notifications-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/notifications-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/notifications-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/notifications-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/notifications-page-xl.webp"
       }
     ]
@@ -190,7 +213,11 @@
     "title": "Job listings with filtering",
     "slug": "job-listenings-with-filtering",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React"
+    ],
     "startDate": "2022-09-16",
     "endDate": "2022-09-17",
     "learning": "",
@@ -199,19 +226,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/job-listing-with-filtering-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/job-listing-with-filtering-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/job-listing-with-filtering-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/job-listing-with-filtering-xl.webp"
       }
     ]
@@ -221,7 +248,10 @@
     "title": "Clipboard landing page",
     "slug": "clipboard-landing-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-09-14",
     "endDate": "2022-09-14",
     "learning": "",
@@ -230,19 +260,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Clipboard-landing-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/clipboard-landing-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/clipboard-landing-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/clipboard-landing-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/clipboard-landing-page-xl.webp"
       }
     ]
@@ -252,7 +282,11 @@
     "title": "Tip calculator app",
     "slug": "tip-calculator-app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React"
+    ],
     "startDate": "2022-09-13",
     "endDate": "2022-09-14",
     "learning": "",
@@ -261,19 +295,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Tip-calculator-app",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/tip-calculator-app-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/tip-calculator-app-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/tip-calculator-app-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/tip-calculator-app-xl.webp"
       }
     ]
@@ -283,7 +317,11 @@
     "title": "Manage landing page",
     "slug": "manage-landing-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React"
+    ],
     "startDate": "2022-09-09",
     "endDate": "2022-09-10",
     "learning": "Este es mi segundo proyecto realizado usando <a href='https://reactjs.org/' target='_blank'>React</a> y con este proyecto aprendí a usar <a href='https://www.w3schools.com/react/react_useref.asp' target='_blank'>useRef</a> y <a href='https://appatico.com/detectar-elemento-con-intersection-observer-en-react/' target='_blank'>la API de observer</a> con React.",
@@ -292,19 +330,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Manage-landing-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/manage-landing-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/manage-landing-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/manage-landing-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/manage-landing-page-xl.webp"
       }
     ]
@@ -314,7 +352,12 @@
     "title": "Advice generator app",
     "slug": "advice-generator-app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API.",
-    "technologies": ["HTML & CSS", "JavaScript", "React", "API"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "React",
+      "API"
+    ],
     "startDate": "2022-09-07",
     "endDate": "2022-09-08",
     "learning": "Consumo de API con <span>Fetch y React</span>, también conociendo el framework de <a href='https://tailwindcss.com/' target='_blank'>tailwind</a> para dar estilos",
@@ -323,19 +366,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/Advice-generator-app-with-react-and-tailwind-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/advice-generator-app-with-react-and-tailwind-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/advice-generator-app-with-react-and-tailwind-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/advice-generator-app-with-react-and-tailwind-xl.webp"
       }
     ]
@@ -343,9 +386,12 @@
   {
     "id": 13,
     "title": "Social media dashboard with theme switcher",
-    "slug":"social-media-dashboard-with-theme-switcher",
+    "slug": "social-media-dashboard-with-theme-switcher",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-08-26",
     "endDate": "2022-08-26",
     "learning": "",
@@ -354,19 +400,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/social-media-dashboard-with-theme-switcher-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/social-media-dashboard-with-theme-switcher-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/social-media-dashboard-with-theme-switcher-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/social-media-dashboard-with-theme-switcher-xl.webp"
       }
     ]
@@ -376,7 +422,10 @@
     "title": "Interactive card details form",
     "slug": "interactive-card-details-form",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "SCSS"],
+    "technologies": [
+      "HTML & CSS",
+      "SCSS"
+    ],
     "startDate": "2022-08-20",
     "endDate": "2022-08-20",
     "learning": "Agregar espacios en blanco cada 4 dígitos en el número de tarjeta utilizando la librería <a href='https://nosir.github.io/cleave.js/' target='_blank'>Cleave.js</a>.",
@@ -385,19 +434,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Interactive-card-details-form",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/interactive-card-details-form-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/interactive-card-details-form-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/interactive-card-details-form-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/interactive-card-details-form-xl.webp"
       }
     ]
@@ -407,7 +456,10 @@
     "title": "Crowdfunding product page",
     "slug": "crowdfunding-product-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-08-14",
     "endDate": "2022-08-15",
     "learning": "",
@@ -416,19 +468,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Crowdfunding-product-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/crowdfunding-product-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/crowdfunding-product-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/crowdfunding-product-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/crowdfunding-product-page-xl.webp"
       }
     ]
@@ -438,7 +490,10 @@
     "title": "Fylo dark theme landing page",
     "slug": "fylo-dark-theme-landing-page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2022-08-09",
     "endDate": "2022-08-09",
     "learning": "",
@@ -447,19 +502,19 @@
     "urlRepo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/fylo-dark-theme-landing-page-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/fylo-dark-theme-landing-page-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/fylo-dark-theme-landing-page-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/fylo-dark-theme-landing-page-xl.webp"
       }
     ]
@@ -487,19 +542,19 @@
     "urlRepo": "https://github.com/MarcosRubi/pintelog",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/pintelog-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/pintelog-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/pintelog-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/pintelog-xl.webp"
       }
     ]
@@ -509,7 +564,10 @@
     "title": "StudyInk",
     "slug": "studyink",
     "description": "Plantilla para una web de educación.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2020-12-07'",
     "endDate": "2020-12-31",
     "learning": "Menu sticky que reduce su altura cuando el usuario desplaza hacia abajo.",
@@ -518,19 +576,19 @@
     "urlRepo": "https://github.com/MarcosRubi/studyInk",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/study-ink-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/study-ink-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/study-ink-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/study-ink-xl.webp"
       }
     ]
@@ -540,7 +598,10 @@
     "title": "Charity",
     "slug": "charity",
     "description": "Plantilla para una web de donativos.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2020-11-25",
     "endDate": "2020-12-31",
     "learning": "Crear acordeón con HTML, CSS y JavaScript.",
@@ -549,19 +610,19 @@
     "urlRepo": "https://github.com/MarcosRubi/charity",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/charity-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/charity-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/charity-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/charity-xl.webp"
       }
     ]
@@ -571,7 +632,10 @@
     "title": "Inveto",
     "slug": "inveto",
     "description": "Plantilla para una web de cursos financieros.",
-    "technologies": ["HTML & CSS", "JavaScript"],
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
     "startDate": "2020-12-23",
     "endDate": "2020-12-31",
     "learning": "Uso de la propiedad <span>order</span> de flexbox para obtener un mejor diseño en los diferentes tipos de pantallas.",
@@ -580,19 +644,19 @@
     "urlRepo": "https://github.com/MarcosRubi/inveto",
     "routeImages": [
       {
-        "id": 0,
+        "id": 1,
         "url": "/images/projects/preview/inveto-preview.webp"
       },
       {
-        "id": 1,
+        "id": 2,
         "url": "/images/projects/mobileDesign/inveto-sm.webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "url": "/images/projects/tabletDesign/inveto-md.webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "url": "/images/projects/desktopDesign/inveto-xl.webp"
       }
     ]

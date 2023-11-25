@@ -6,24 +6,25 @@ export const ArrowRight = () => {
   return <svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='feather feather-arrow-right'><line x1='5' y1='12' x2='19' y2='12' /><polyline points='12 5 19 12 12 19' /></svg>
 }
 function ImageSlider ({ project }) {
-  const [wordData, setWordData] = useState(project[0])
+  const images = project.filter((project) => project.id !== 1)
+  const [wordData, setWordData] = useState(images[0])
   const [val, setVal] = useState(0)
 
   const handleClick = (index) => {
     setVal(index)
-    const wordSlider = project[index]
+    const wordSlider = images[index]
     setWordData(wordSlider)
   }
   const handleNext = () => {
-    const index = val < project.length - 1 ? val + 1 : 0
+    const index = val < images.length - 1 ? val + 1 : 0
     setVal(index)
-    const wordSlider = project[index]
+    const wordSlider = images[index]
     setWordData(wordSlider)
   }
   const handlePrevious = () => {
-    const index = val <= project.length - 1 && val > 0 ? val - 1 : project.length - 1
+    const index = val <= images.length - 1 && val > 0 ? val - 1 : images.length - 1
     setVal(index)
-    const wordSlider = project[index]
+    const wordSlider = images[index]
     setWordData(wordSlider)
   }
 
@@ -35,9 +36,9 @@ function ImageSlider ({ project }) {
         <button className='btn ' onClick={handleNext}><ArrowRight /></button>
       </div>
       <div className='carousel-images flex justify-center flex-wrap'>
-        {project.map((project, i) =>
+        {images.map((image, i) =>
           <div className='thumbnail' key={i}>
-            <img className={wordData.id === i ? 'clicked' : ''} src={project.url} onClick={() => handleClick(i)} height='70' width='100' />
+            <img className={val === i ? 'clicked' : ''} src={image.url} onClick={() => handleClick(i)} height='70' width='100' />
           </div>
         )}
       </div>

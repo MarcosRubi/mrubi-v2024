@@ -954,6 +954,9 @@ section .container {
 }
 .carousel-project .carousel-main-image {
   margin: 1rem auto !important;
+  overflow-y: scroll;
+  max-height: 500px;
+  overflow-x: hidden;
 }
 .carousel-project .carousel-main-image .btn {
   display: none;
@@ -963,6 +966,10 @@ section .container {
 }
 .carousel-project img {
   object-fit: cover;
+}
+.carousel-project img.main-image-carousel {
+  width: auto;
+  height: fit-content;
 }
 .carousel-project .btn:hover {
   transform: scale(1.5);
@@ -1474,6 +1481,12 @@ textarea {
   }
   .carousel-project .carousel-main-image .btn {
     display: block;
+    position: sticky;
+    top: 0;
+    height: 100%;
+  }
+  .carousel-project .carousel-main-image img.main-image-carousel {
+    max-width: 725px;
   }
   footer {
     margin-top: 4rem;

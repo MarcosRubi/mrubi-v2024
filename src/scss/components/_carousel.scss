@@ -2,43 +2,63 @@
     &-images {
         padding-top: 20px;
     }
-    .carousel-main-image{
+
+    .carousel-main-image {
         margin: 1rem auto !important;
-        .btn{
+        overflow-y: scroll;
+        max-height: 500px;
+        overflow-x: hidden;
+
+        .btn {
             display: none;
         }
     }
-    .carousel-images{
-        gap:1rem;
+
+    .carousel-images {
+        gap: 1rem;
     }
 
     img {
+        &.main-image-carousel {
+            width: auto;
+            height: fit-content;
+        }
+
         object-fit: cover;
+
     }
-    .btn:hover{
+
+    .btn:hover {
         transform: scale(1.5);
     }
-    
+
     .thumbnail {
-        img{
+        img {
             filter: contrast(.75);
             cursor: pointer;
         }
+
         .clicked {
             filter: contrast(1);
             border: 3px solid var(--color-hover);
-    }
-    
+        }
+
     }
 }
 
-@mixin carousel-1024{
-    .carousel-project{
-        .carousel-main-image{
-            .btn{
+@mixin carousel-1024 {
+    .carousel-project {
+        .carousel-main-image {
+            .btn {
                 display: block;
+                position: sticky;
+                top: 0;
+                height: 100%;
+            }
+
+            img.main-image-carousel {
+                max-width: 725px;
             }
         }
     }
 }
-
