@@ -30,6 +30,12 @@
 
 @mixin experience-1024 {
 	.experience {
+		h3{
+			font-size: 1.5rem;
+		}
+		h4{
+			font-size: 1.4rem;
+		}
 		&__item {
 			flex-direction: row;
 			gap: 4rem;
@@ -43,6 +49,16 @@
 		&__date {
 			min-width: 16rem;
 			max-width: 18rem;
+		}
+	}
+}
+@mixin experience-1200{
+	.experience{
+		h3{
+			font-size: 1.75rem;
+		}
+		h4{
+			font-size: 1.5rem;
 		}
 	}
 }

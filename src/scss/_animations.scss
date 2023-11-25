@@ -1,0 +1,61 @@
+.menu {
+  .logo {
+    animation: bounceInBottom .5s ease-in-out .25s, visible 1s ease-in-out;
+  }
+
+  .menu__toggle {
+    animation: bounceInBottom .5s ease-in-out .4s, visible 1.25s ease-in-out;
+  }
+
+  .menu__setting {
+    animation: bounceInBottom .5s ease-in-out .6s, visible 1.5s ease-in-out;
+  }
+
+  .menu__hamburguer {
+    animation: bounceInBottom .5s ease-in-out .75s, visible 1.75s ease-in-out;
+  }
+}
+
+.banner {
+  overflow-y: hidden;
+    h1 {
+      animation: bounceInBottom .5s ease-in-out .25s, visible 1s ease-in-out;
+    }
+
+    p {
+      animation: bounceInBottom .5s ease-in-out .4s, visible 1.25s ease-in-out;
+    }
+
+    .btn {
+      animation: bounceInBottom .5s ease-in-out .5s, visible 1.5s ease-in-out;
+    }
+
+    h2 {
+      animation: bounceInBottom .5s ease-in-out .6s, visible 1.75s ease-in-out;
+    }
+
+    .skill-container {
+      animation: bounceInBottom .5s ease-in-out .75s, visible 2s ease-in-out;
+    }
+}
+
+
+@mixin animations-768 {
+  .menu {
+    .logo {
+      animation: bounceInRight .5s ease-in-out .25s, visible 1s ease-in-out;
+    }
+
+    .menu__hamburguer {
+      animation: bounceInRight .5s ease-in-out .4s, visible 1.25s ease-in-out;
+    }
+
+    .menu__toggle {
+      animation: bounceInRight .5s ease-in-out .6s, visible 1.5s ease-in-out;
+    }
+
+    .menu__setting {
+      animation: bounceInRight .5s ease-in-out .75s, visible 1.75s ease-in-out;
+    }
+  }
+}

@@ -5,6 +5,7 @@
     @include timeline-768;
     @include projects-768;
     @include footer-768;
+    @include animations-768;
 }
 @media (min-width:1024px) {
     @include base-1024;
@@ -19,6 +20,7 @@
 @media (min-width:1200px) {
     @include base-1200;
     @include projects-1200;
+    @include experience-1200;
     @include footer-1200;
 }
 

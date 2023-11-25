@@ -57,16 +57,16 @@ function Nav () {
             <a href='mailto:danielhernandez9980%40gmail.com' className='btn btn-secondary' onClick={() => { toggleMenu() }}><span>Enviar Correo </span></a>
             <ul className='flex align-center social-list'>
               <li>
-                <a href='https://www.linkedin.com/in/marcos-rubi/' target='_blank' rel='noreferrer'><IconLinkedin /></a>
+                <a href='https://www.linkedin.com/in/marcos-rubi/' target='_blank' rel='noreferrer' aria-label='Ir al Linkedin de Marcos Rubí'><IconLinkedin /></a>
               </li>
               <li>
-                <a href='https://www.instagram.com/mrubi__07/' target='_blank' rel='noreferrer'><IconInstagram /></a>
+                <a href='https://www.instagram.com/mrubi__07/' target='_blank' rel='noreferrer' aria-label='Ir al instagram de Marcos Rubí'><IconInstagram /></a>
               </li>
               <li>
-                <a href='https://www.facebook.com/MarcosRubi07' target='_blank' rel='noreferrer'><IconFacebook /></a>
+                <a href='https://www.facebook.com/MarcosRubi07' target='_blank' rel='noreferrer' aria-label='Ir al facebook de Marcos Rubí'><IconFacebook /></a>
               </li>
               <li>
-                <a href='https://twitter.com/Fuhrer_RD' target='_blank' rel='noreferrer'><IconTwitter /></a>
+                <a href='https://twitter.com/Fuhrer_RD' target='_blank' rel='noreferrer' aria-label='Ir al twitter de Marcos Rubí'><IconTwitter /></a>
               </li>
             </ul>
           </div>

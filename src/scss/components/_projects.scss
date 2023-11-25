@@ -236,6 +236,7 @@
     img {
       overflow: hidden;
       transition: transform 0.3s ease-in-out !important;
+      height: auto;
     }
 
     &:hover img {

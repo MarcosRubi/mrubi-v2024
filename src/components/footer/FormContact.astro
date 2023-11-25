@@ -5,29 +5,29 @@ import IconComment from "../../utils/IconComment.astro";
 ---
     <div class='form-contact'>
       <h4>Contactar</h4>
-      <form action='https://formsubmit.io/send/danielhernandez9980@gmail.com' method='post' onsubmit="return false;">
+      <form action='https://formsubmit.io/send/danielhernandez9980@gmail.com' method='post' onsubmit="return false;" aria-label="Formulario de contacto">
         <div class='input-group relative'>
-          <input type='text' name='txtName' id='txtName' required='required' />
+          <input type='text' name='txtName' id='txtName' required='required' aria-required='true' />
           <label for='txtName' class='absolute placeholder'>Nombre</label>
           <label for='txtName' class='absolute placeholder-icon'>
             <IconUser />
           </label>
         </div>
         <div class='input-group relative'>
-          <input type='email' name='txtEmail' id='txtEmail' required='required' />
+          <input type='email' name='txtEmail' id='txtEmail' required='required' aria-required='true' />
           <label for='txtEmail' class='absolute placeholder'>Email</label>
           <label for='txtEmail' class='absolute placeholder-icon'>
             <IconEmail />
           </label>
         </div>
         <div class='input-group relative'>
-          <textarea name='txtMessage' id='txtMessage' cols='30' rows='5' required='required' />
+          <textarea name='txtMessage' id='txtMessage' cols='30' rows='5' required='required' aria-required='true' />
           <label for='txtMessage' class='absolute placeholder'>Mensaje</label>
           <label for='txtMessage' class='absolute placeholder-icon'>
             <IconComment />
           </label>
         </div>
-        <button type='submit' class='btn btn-primary'>
+        <button type='submit' class='btn btn-primary' aria-label='Enviar Mensaje'>
           <span>Enviar Mensaje</span>
         </button>
       </form>

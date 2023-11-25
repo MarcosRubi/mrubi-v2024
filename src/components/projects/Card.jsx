@@ -13,6 +13,8 @@ function Card ({ project }) {
           alt={`Foto del proyecto ${project.title}`}
           className='flex'
           loading='lazy'
+          width='475'
+          height='348'
         />
       </a>
       <div className='project__content'>

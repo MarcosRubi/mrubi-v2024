@@ -896,6 +896,7 @@ section .container {
 .project__img img {
   overflow: hidden;
   transition: transform 0.3s ease-in-out !important;
+  height: auto;
 }
 .project__img:hover img {
   transform: scale(1.1);
@@ -1078,6 +1079,14 @@ textarea {
     height: 100%;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @keyframes iconCloseLine1 {
   0%, 60% {
     transform: translate(10px, -8px);
@@ -1117,6 +1126,106 @@ textarea {
     opacity: 0;
   }
 }
+@keyframes bounceInBottom {
+  0% {
+    transform: translateY(-10rem);
+  }
+  75% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes bounceInTop {
+  0% {
+    transform: translateY(10rem);
+  }
+  75% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    transform: translateX(-10rem);
+  }
+  75% {
+    transform: translateX(0.5rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes bounceInLeft {
+  0% {
+    transform: translateX(10rem);
+  }
+  75% {
+    transform: translateX(0.5rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes toBottom {
+  0% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes toTop {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes visible {
+  0%, 40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu .logo {
+  animation: bounceInBottom 0.5s ease-in-out 0.25s, visible 1s ease-in-out;
+}
+.menu .menu__toggle {
+  animation: bounceInBottom 0.5s ease-in-out 0.4s, visible 1.25s ease-in-out;
+}
+.menu .menu__setting {
+  animation: bounceInBottom 0.5s ease-in-out 0.6s, visible 1.5s ease-in-out;
+}
+.menu .menu__hamburguer {
+  animation: bounceInBottom 0.5s ease-in-out 0.75s, visible 1.75s ease-in-out;
+}
+
+.banner {
+  overflow-y: hidden;
+}
+.banner h1 {
+  animation: bounceInBottom 0.5s ease-in-out 0.25s, visible 1s ease-in-out;
+}
+.banner p {
+  animation: bounceInBottom 0.5s ease-in-out 0.4s, visible 1.25s ease-in-out;
+}
+.banner .btn {
+  animation: bounceInBottom 0.5s ease-in-out 0.5s, visible 1.5s ease-in-out;
+}
+.banner h2 {
+  animation: bounceInBottom 0.5s ease-in-out 0.6s, visible 1.75s ease-in-out;
+}
+.banner .skill-container {
+  animation: bounceInBottom 0.5s ease-in-out 0.75s, visible 2s ease-in-out;
+}
+
 @media (min-width: 768px) {
   section .container, footer .container {
     padding: 4rem 0 4rem 4rem;
@@ -1260,6 +1369,18 @@ textarea {
   footer .container {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
+  .menu .logo {
+    animation: bounceInRight 0.5s ease-in-out 0.25s, visible 1s ease-in-out;
+  }
+  .menu .menu__hamburguer {
+    animation: bounceInRight 0.5s ease-in-out 0.4s, visible 1.25s ease-in-out;
+  }
+  .menu .menu__toggle {
+    animation: bounceInRight 0.5s ease-in-out 0.6s, visible 1.5s ease-in-out;
+  }
+  .menu .menu__setting {
+    animation: bounceInRight 0.5s ease-in-out 0.75s, visible 1.75s ease-in-out;
+  }
 }
 @media (min-width: 1024px) {
   h1 {
@@ -1317,6 +1438,12 @@ textarea {
   }
   .about-me__content {
     max-width: 60%;
+  }
+  .experience h3 {
+    font-size: 1.5rem;
+  }
+  .experience h4 {
+    font-size: 1.4rem;
   }
   .experience__item {
     flex-direction: row;
@@ -1385,6 +1512,12 @@ textarea {
   }
   .project.view .dates {
     grid-area: time;
+  }
+  .experience h3 {
+    font-size: 1.75rem;
+  }
+  .experience h4 {
+    font-size: 1.5rem;
   }
   footer .container {
     grid-template-columns: repeat(3, 1fr);
