@@ -38,7 +38,7 @@ function Projects () {
     <section className='projects'>
       <div className='container' id='projects'>
         <h2 className='text-center'>Proyectos</h2>
-        <div>
+        <div className='description'>
           <p>De los más de 50 proyectos, he seleccionado los más relevantes.</p>
           <p>No son realizados con tutoriales, descargas web ni trabajos universitarios.</p>
         </div>
