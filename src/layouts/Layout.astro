@@ -1,6 +1,6 @@
 ---
-	import Header from "../components/Header.jsx";
-	import Footer from "../components/Footer.astro";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.astro";
 
 interface Props {
 	title: string;
@@ -57,6 +57,6 @@ import { ViewTransitions } from "astro:transitions";
 	<body>
 		<Header client:only />
 		<slot />
-		<Footer/>
+		<Footer />
 	</body>
 </html>

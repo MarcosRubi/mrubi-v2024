@@ -51,20 +51,35 @@
 }
 
 h2,
-section .btn,
+.projects .btn,
 .about-me h3,
 .about-me p,
 .about-me img,
 .projects .description,
 .project__card,
 .experience__item,
-.timeline li,
+#splide01-track,
 .repositories,
 .social,
-.form-contact{
+.form-contact {
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 30%;
+}
+
+.project.view {
+
+  h3,
+  .technologies,
+  .buttons,
+  .dates,
+  .description,
+  .learning,
+  .dificulties {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
 }
 
 @mixin animations-768 {
@@ -83,6 +98,62 @@ section .btn,
 
     .menu__setting {
       animation: bounceInRight .5s ease-in-out .75s, visible 1.75s ease-in-out;
+    }
+  }
+
+}
+
+@mixin animations-1440 {
+  .projects {
+    .back {
+      animation: visible .25s linear;
+    }
+
+    .view {
+      img,
+      .btn{
+        animation: none;
+      }
+      .carousel-main-image,
+      .size-img {
+        animation: visible .5s both;
+      }
+
+      .thumbnail:first-child {
+        animation: visible .75s both;
+      }
+
+      .thumbnail:nth-child(2) {
+        animation: visible 1s both;
+      }
+
+      .thumbnail:last-child {
+        animation: visible 1.25s both;
+      }
+
+      h3 {
+        animation: visible 1s both;
+      }
+
+      .buttons {
+        animation: visible 1.25s both;
+      }
+
+      .technologies {
+        animation: visible 1.5s both;
+      }
+      .dates {
+        animation: visible 1.75s both;
+      }
+      .description {
+        animation: visible 2s both;
+      }
+      .learning {
+        animation: visible 2.25s both;
+      }
+      .difficulties {
+        animation: visible 2.5s both;
+      }
     }
   }
 }

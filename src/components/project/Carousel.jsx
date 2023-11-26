@@ -6,6 +6,9 @@ export const ArrowRight = () => {
   return <svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className='feather feather-arrow-right'><line x1='5' y1='12' x2='19' y2='12' /><polyline points='12 5 19 12 12 19' /></svg>
 }
 function ImageSlider ({ project }) {
+  const sizes = [
+    'Móvil', 'Tablet', 'Escritorio'
+  ]
   const images = project.filter((project) => project.id !== 1)
   const [wordData, setWordData] = useState(images[0])
   const [val, setVal] = useState(0)
@@ -30,7 +33,8 @@ function ImageSlider ({ project }) {
 
   return (
     <div className='carousel-project flex flex-column align-center img'>
-      <div className=' carousel-main-image flex'>
+      <span className='size-img'>Diseño en {sizes[val]} </span>
+      <div className='carousel-main-image flex '>
         <button className='btn' onClick={handlePrevious}><ArrowLeft /></button>
         <img src={wordData.url} height='500' width='725' className='main-image-carousel' />
         <button className='btn ' onClick={handleNext}><ArrowRight /></button>

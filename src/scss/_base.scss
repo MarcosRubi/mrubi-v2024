@@ -304,6 +304,7 @@ section {
     border-radius: 0.25rem;
     box-shadow: var(--shadow);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10;
 }
 
 @mixin base-768{

@@ -265,11 +265,6 @@
 
   .dates {
     gap: 1rem;
-
-    .d-flex {
-      margin: 0;
-    }
-
     span {
       font-size: 1rem;
       margin: 0.5rem;
@@ -288,6 +283,10 @@
     .buttons,
     .description {
       margin: 0;
+    }
+    .size-img{
+      padding: 1rem 2rem 0rem 1rem;
+      border-radius: .25rem;
     }
   }
 }

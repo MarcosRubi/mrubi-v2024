@@ -7,6 +7,7 @@ import dataProjects from "../../data/projects.json";
 import Technologies from "../../components/projects/Technologies";
 import FormatedDate from "../../components/projects/FormatedDate";
 import Carousel from "../../components/project/Carousel";
+import ButtonGoBack from "../../components/project/ButtonGoBack";
 
 const { slug } = Astro.params;
 
@@ -17,6 +18,8 @@ export const getStaticPaths = (() => {
 }) satisfies GetStaticPaths;
 
 const project = dataProjects.filter((project) => project.slug === slug)[0];
+
+
 ---
 
 <Layout title={`Proyecto ${project.title} | Marcos Rubí`}>
@@ -24,11 +27,7 @@ const project = dataProjects.filter((project) => project.slug === slug)[0];
         <section class="projects">
             <div class="container">
                 <div class="back">
-                    <button
-                        class="btn btn-secondary"
-                        onclick="window.history.back()"
-                        ><span>Ir a proyectos</span>
-                    </button>
+                    <ButtonGoBack client:only/>
                 </div>
                 <div class="project view">
                     <Carousel client:only project={project.routeImages} />

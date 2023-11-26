@@ -25,5 +25,6 @@
 }
 
 @media (min-width:1440px) {
+    @include animations-1440;
     @include projects-1440;
 }

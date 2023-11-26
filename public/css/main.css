@@ -360,6 +360,7 @@ section .container {
   border-radius: 0.25rem;
   box-shadow: var(--shadow);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .line {
@@ -595,6 +596,10 @@ section .container {
 .banner {
   overflow-x: hidden;
 }
+.banner h1, .banner h2, .banner p {
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+}
 .banner::before {
   content: "";
   position: absolute;
@@ -620,10 +625,6 @@ section .container {
 }
 .banner .container {
   z-index: 10;
-}
-.banner h1, .banner p {
-  text-shadow: 2px 2px 3px #000;
-  color: #fff;
 }
 .banner .btn {
   display: inline-flex;
@@ -929,9 +930,6 @@ section .container {
 .project .dates {
   gap: 1rem;
 }
-.project .dates .d-flex {
-  margin: 0;
-}
 .project .dates span {
   font-size: 1rem;
   margin: 0.5rem;
@@ -947,6 +945,10 @@ section .container {
 .project.view .buttons,
 .project.view .description {
   margin: 0;
+}
+.project.view .size-img {
+  padding: 1rem 2rem 0rem 1rem;
+  border-radius: 0.25rem;
 }
 
 .not-found p {
@@ -1264,17 +1266,29 @@ textarea {
 }
 
 h2,
-section .btn,
+.projects .btn,
 .about-me h3,
 .about-me p,
 .about-me img,
 .projects .description,
 .project__card,
 .experience__item,
-.timeline li,
+#splide01-track,
 .repositories,
 .social,
 .form-contact {
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+.project.view h3,
+.project.view .technologies,
+.project.view .buttons,
+.project.view .dates,
+.project.view .description,
+.project.view .learning,
+.project.view .dificulties {
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 30%;
@@ -1588,6 +1602,47 @@ section .btn,
   }
 }
 @media (min-width: 1440px) {
+  .projects .back {
+    animation: visible 0.25s linear;
+  }
+  .projects .view img,
+  .projects .view .btn {
+    animation: none;
+  }
+  .projects .view .carousel-main-image,
+  .projects .view .size-img {
+    animation: visible 0.5s both;
+  }
+  .projects .view .thumbnail:first-child {
+    animation: visible 0.75s both;
+  }
+  .projects .view .thumbnail:nth-child(2) {
+    animation: visible 1s both;
+  }
+  .projects .view .thumbnail:last-child {
+    animation: visible 1.25s both;
+  }
+  .projects .view h3 {
+    animation: visible 1s both;
+  }
+  .projects .view .buttons {
+    animation: visible 1.25s both;
+  }
+  .projects .view .technologies {
+    animation: visible 1.5s both;
+  }
+  .projects .view .dates {
+    animation: visible 1.75s both;
+  }
+  .projects .view .description {
+    animation: visible 2s both;
+  }
+  .projects .view .learning {
+    animation: visible 2.25s both;
+  }
+  .projects .view .difficulties {
+    animation: visible 2.5s both;
+  }
   .projects__container {
     grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   }
