@@ -660,5 +660,76 @@
         "url": "/images/projects/desktopDesign/inveto-xl.webp"
       }
     ]
+  },
+  {
+    "id": 21,
+    "title": "Insure Landing Page",
+    "slug": "insure-landing-page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8' target='_blank'>Frontend Mentor</a>.",
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
+    "startDate": "2022-12-17",
+    "endDate": "2022-12-17",
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Insure-landing-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Insure-landing-page",
+    "routeImages": [
+      {
+        "id": 1,
+        "url": "/images/projects/preview/insure-landing-page-preview.webp"
+      },
+      {
+        "id": 2,
+        "url": "/images/projects/mobileDesign/insure-landing-page-sm.webp"
+      },
+      {
+        "id": 3,
+        "url": "/images/projects/tabletDesign/insure-landing-page-md.webp"
+      },
+      {
+        "id": 4,
+        "url": "/images/projects/desktopDesign/insure-landing-page-xl.webp"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "E-commerce Product Page",
+    "slug": "e-commerce-product-page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6' target='_blank'>Frontend Mentor</a>.",
+    "technologies": [
+      "HTML & CSS",
+      "SCSS",
+      "JavaScript",
+      "React", 
+      "Astro"
+    ],
+    "startDate": "2023-11-29",
+    "endDate": "2023-12-02",
+    "learning": "Práctica usando <a href='https://github.com/pmndrs/zustand' target='_blank'>Zustand</a>, considero que es más fácil crear un estado global con esta librería en vez de usar el context de React. ",
+    "difficulties": "Reutilizar el componente de modal, ya que se usa en la vista de móvil y luego en el modal en la vista de escritorio.",
+    "urlDemo": "https://e-commerce-product-page-henna-three.vercel.app/",
+    "urlRepo": "https://github.com/MarcosRubi/E-commerce-product-page",
+    "routeImages": [
+      {
+        "id": 1,
+        "url": "/images/projects/preview/e-commerce-product-page-preview.webp"
+      },
+      {
+        "id": 2,
+        "url": "/images/projects/mobileDesign/e-commerce-product-page-sm.webp"
+      },
+      {
+        "id": 3,
+        "url": "/images/projects/tabletDesign/e-commerce-product-page-md.webp"
+      },
+      {
+        "id": 4,
+        "url": "/images/projects/desktopDesign/e-commerce-product-page-xl.webp"
+      }
+    ]
   }
 ]
