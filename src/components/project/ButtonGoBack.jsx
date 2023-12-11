@@ -4,7 +4,7 @@ function ButtonGoBack () {
   }
 
   const goToInicioHandler = () => {
-    window.location.href = 'https://mrubi.vercel.app/'
+    window.location.href = 'https://mrubi.dev/'
   }
 
   if (document.referrer.includes(window.location.origin)) {

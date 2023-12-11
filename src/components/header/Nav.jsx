@@ -34,7 +34,9 @@ function Nav () {
             <img
               className='flex'
               src='/logo.svg'
-              alt='Logo de Marcos Rubí'
+              alt='Logo de Marcos Rubí - Gema Ruby'
+              width='40px' height='40px'
+              loading='lazy'
             />
             <span>Marcos Rubí</span>
           </div>
