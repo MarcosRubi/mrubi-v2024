@@ -7,6 +7,7 @@
         margin: 1rem auto !important;
         overflow-y: scroll;
         max-height: 500px;
+        justify-content: center;
         overflow-x: hidden;
 
         .btn {
@@ -49,6 +50,8 @@
 @mixin carousel-1024 {
     .carousel-project {
         .carousel-main-image {
+            min-width: 881px;
+            justify-content: space-between;
             .btn {
                 display: block;
                 position: sticky;
