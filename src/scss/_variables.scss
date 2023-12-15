@@ -1,5 +1,7 @@
 :root {
     --font-title: "Telex", sans-serif;
+    --always-white : #fffcff;
+    --always-black : #212121;
 }
 
 [data-theme]:not([data-theme="default-dark"]):not([data-theme="purple-dark"]):not([data-theme="blue-dark"]):not([data-theme="green-dark"]) {
@@ -25,9 +27,9 @@
 
 [data-theme="default-dark"] {
     --color-link: #78a6c8;
-    --color-hover: #e65c4f;
+    --color-hover: #dd2e2e;
     --color-link-alpha: rgba(100, 166, 208, 0.8);
-    --color-hover-alpha: rgba(230, 92, 79, 0.8);
+    --color-hover-alpha: rgba(213, 32, 32, 0.8);
 }
 
 [data-theme="blue-light"] {

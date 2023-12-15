@@ -195,7 +195,7 @@ section {
 
     span,
     svg {
-        color: #0e0f26;
+        color: var(--always-white);
     }
 
     &:hover::before {
