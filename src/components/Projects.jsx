@@ -39,18 +39,18 @@ function Projects () {
       <div className='container' id='projects'>
         <h2 className='text-center'>Proyectos</h2>
         <div className='description'>
-          <p>De los más de 50 proyectos, he seleccionado los más relevantes.</p>
-          <p>No son realizados con tutoriales, descargas web ni trabajos universitarios.</p>
+          <p>Entre los más de 50 proyectos que he realizado, he elegido los más relevantes.</p>
+          <p>Ninguno fue realizado mediante tutoriales, plantillas web, ni se trata de trabajos universitarios.</p>
         </div>
 
         <NavFilters />
 
         {projects.length === 0 && <NotResults />}
-        <div className='projects__container'>
+        <section className='projects__container'>
           {projects.slice(0, visibleProjects).map((project, index) => (
             <Card project={project} key={index} />
           ))}
-        </div>
+        </section>
         <div className='flex-wrap btn-updates flex justify-center align-center '>
           <button
             className={`btn btn-primary show-more ${visibleProjects >= projects.length ? 'hide' : ''}`}

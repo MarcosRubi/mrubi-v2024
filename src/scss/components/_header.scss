@@ -34,9 +34,7 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        border-bottom: 1px solid var(--color-hover-alpha);
         pointer-events: none;
-        animation: headerLine-sm 1s ease-in-out;
     }
 
     &::after {
@@ -44,7 +42,7 @@
         position: absolute;
         width: 100%;
         height: 0%;
-        background-color: var(--bg-footer);
+        background-color: var(--always-black);
         top: 0;
         left: 0;
         transition: height .3s ease-in-out;
@@ -67,9 +65,15 @@
         height: 100%;
     }
 
+    &.sticky::before {
+        border-bottom: 1px solid var(--color-hover-alpha);
+        animation: headerLine-sm 1s ease-in-out;
+    }
+
     &__hamburguer {
         width: 32px;
         cursor: pointer;
+        order: 5;
 
         .lines {
             &:hover span:first-child {
@@ -91,10 +95,6 @@
         }
     }
 
-    &__hamburguer {
-        order: 5;
-    }
-
     &__content {
         height: 100vh;
         background-color: var(--bg-footer);
@@ -105,17 +105,20 @@
         visibility: hidden;
         transition: top 0.75s ease-in-out, visibility 0.75s linear;
         z-index: 999;
+
         &.show-menu {
             top: 0;
             visibility: visible;
         }
+
         .btn {
             padding: 1rem;
         }
 
         nav {
             margin-top: 1rem;
-            ul{
+
+            ul {
                 flex-direction: column;
             }
 
@@ -190,7 +193,7 @@
                 transform: translate(-50%, -50%);
                 width: 90%;
                 height: 85%;
-                background: var(--text-color);
+                background: var(--always-white);
                 border-radius: 50px;
             }
 
@@ -217,28 +220,12 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 1.25rem;
-            color: var(--bg-color);
+            color: var(--always-black);
             pointer-events: none;
             width: 1.25rem;
             height: 1.25rem;
         }
 
-        span {
-            background-color: var(--text-color);
-            color: var(--bg-color);
-            font-weight: 700;
-            font-size: 0.9rem;
-            width: 210px;
-            padding: 0.5rem 1rem;
-            border-radius: 0.25rem;
-            left: -50%;
-            top: 150%;
-            cursor: pointer;
-
-            &.hide {
-                visibility: hidden;
-            }
-        }
     }
 
     &__setting {
@@ -246,136 +233,94 @@
             padding: 0.75rem 1rem;
             border: none;
         }
+
+        svg {
+            stroke: var(--always-white);
+        }
     }
+
+    #menu-backdrop {
+        position: absolute;
+        background-color: var(--color-hover-alpha);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        transform: translate(0, 0);
+        top: 0;
+    }
+
 }
 
 
 @mixin header-768 {
-    .logo {
-        padding-top: 1em;
-    }
-
     .menu {
-        height: 100vh;
-        width: auto;
-
-        &::before {
-            top: 0;
-            height: 100%;
-            border-right: 1px solid var(--color-hover-alpha);
-            border-bottom: none;
-            animation: headerLine-md 1s ease-in-out;
-        }
-
-        &>div {
-            height: 100%;
-            flex-direction: column;
-        }
-
         &.sticky::after {
-            height: 0;
+            height: 100%;
         }
 
         &__content {
+            position: relative;
             top: 0;
-            left: -100vw;
+            left: 0;
+            height: auto;
+            width: auto;
             visibility: visible;
+            background-color: transparent;
             transition: left 0.75s ease-in-out;
+
             &.show-menu {
                 top: 0;
                 left: 0;
             }
 
             nav {
-                ul{
+                margin: 0;
+                width: auto;
+
+                ul {
                     flex-direction: row;
                 }
-                a{
+
+                li {
+                    width: auto;
+                }
+
+                a {
                     font-size: 1rem;
+                    padding: 0 .5rem;
+                    color: var(--always-white);
+                    font-weight: 900;
                 }
             }
+        }
+
+        &__header,
+        &__footer {
+            display: none;
         }
 
         &__hamburguer {
-            order: initial;
-            flex-grow: 1;
+            display: none;
         }
 
         &__preset-colors {
-            top: -50%;
-            min-width: 10rem;
-            left: 50%;
-            transform: translateY(-55%);
-
-            transition: top 500ms, opacity 500ms, visibility .2s, left 500ms, min-width 500ms;
-
-
-            &.show {
-                top: -50%;
-                left: 105%;
-                min-width: 11rem;
-            }
+            left: 0%;
         }
 
         &__toggle {
-            width: 35px;
-            height: 4.5rem;
-            margin-bottom: 1rem;
-
-            input:before {
-                width: 80%;
-                height: 90%;
-            }
-
-            input:checked:after {
-                transform: translate(4px, 95%);
-            }
-
-            input:after {
-                top: 25%;
-            }
-
-            span {
-                left: 150%;
-                top: 25%;
-            }
-
-            .feather-moon {
-                right: 8px;
-                top: 3.5rem;
-            }
-
-            .feather-sun {
-                left: 7px;
-                top: 1rem;
+            input {
+                min-width: 80px;
             }
         }
-
-        &__footer {
-            visibility: visible;
-            .social-list a {
-                padding: 1rem 1.25rem;
-            }
-
-            .btn {
-                font-size: 1rem;
-            }
-        }
-
     }
 }
 
 @mixin header-1024 {
-    header .btn {
-        font-size: 1.5rem;
-    }
-
     .menu {
         &__content {
-            font-size: 1.5rem;
-
             nav a {
-                font-size: 1.5rem;
+                font-size: 1.15rem;
+                padding: .5rem 1rem;
             }
         }
     }

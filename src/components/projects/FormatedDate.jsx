@@ -13,7 +13,7 @@ function FormatedDate ({ date }) {
     return `${dia}/${meses[parseInt(mes, 10) - 1]}/${ano}`
   }
   return (
-    <div className='date'>{formatDate(date)} </div>
+    <time className='date'>{formatDate(date)} </time>
   )
 }
 

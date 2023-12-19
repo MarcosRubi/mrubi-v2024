@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 export const IconInstagram = () => {
   return <svg stroke='currentColor' fill='currentColor' strokeWidth='0' viewBox='0 0 1024 1024' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M511 4c138 0 155 1 209 3 53 2 90 11 123 24 34 13 62 30 90 58s45 56 58 90c13 33 22 70 24 123 2 54 3 71 3 209s-1 155-3 209c-2 53-11 90-24 123-13 34-30 62-58 90s-56 45-90 58c-33 13-70 22-123 24-54 2-71 3-209 3s-155-1-209-3c-53-2-90-11-123-24-34-13-62-30-90-58s-45-56-58-90C18 810 9 773 7 720c-2-54-3-71-3-209s1-155 3-209c2-53 11-90 24-123 13-34 30-62 58-90s56-45 90-58c33-13 70-22 123-24 54-2 71-3 209-3zm0 66c-144 0-161 1-217 3-52 2-81 12-100 19-49 20-82 53-102 102-7 19-17 48-19 100-2 56-3 73-3 217s1 161 3 217c2 52 12 81 19 100 20 49 53 82 102 102 19 7 48 17 100 19 56 2 73 3 217 3s161-1 217-3c52-2 81-12 100-19 49-20 82-53 102-102 7-19 17-48 19-100 2-56 3-73 3-217s-1-161-3-217c-2-52-12-81-19-100-20-49-53-82-102-102-19-7-48-17-100-19-56-2-73-3-217-3zm0 644c112 0 203-91 203-203s-91-203-203-203-203 91-203 203 91 203 203 203zm0-463c144 0 260 116 260 260S655 771 511 771 251 655 251 511s116-260 260-260zm332-10c0 34-28 60-62 60s-60-26-60-60 26-62 60-62 62 28 62 62z' /></svg>
 }
@@ -12,12 +12,48 @@ export const IconTwitter = () => {
   return <svg stroke='currentColor' fill='currentColor' strokeWidth='0' viewBox='0 0 1024 1024' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M684.4 158.688c52.88 0 100.621 21.636 134.253 56.372 41.84-8.096 81.28-22.848 116.721-43.28-13.712 41.633-42.88 76.56-80.815 98.656 37.12-4.368 72.656-13.904 105.632-28.16-24.72 35.744-55.84 67.216-91.776 92.368.336 7.632.529 15.344.529 23.023 0 235.728-185.008 507.615-523.312 507.615-103.84 0-200.56-29.631-281.903-80.223a377.607 377.607 0 0 0 43.84 2.527c86.16 0 165.503-28.496 228.463-76.4-80.528-1.376-148.496-53.008-171.808-123.84a188.078 188.078 0 0 0 34.624 3.216c16.72 0 33.008-2.16 48.4-6.256-84.128-16.336-147.536-88.448-147.536-174.93v-2.287c24.816 13.376 53.152 21.408 83.344 22.336-49.376-32.033-81.84-86.56-81.84-148.465 0-32.72 9.089-63.376 24.913-89.632C216.817 299.2 352.337 370.24 505.217 377.712c-3.153-13.025-4.784-26.784-4.784-40.624 0-98.544 82.351-178.4 183.967-178.4zm275.789 83.621h.16-.16zM684.397 94.692c-125.664 0-229.773 91.809-245.806 210.433-102.816-20.656-196.32-75.088-263.504-154.944a63.993 63.993 0 0 0-48.977-22.815 66.23 66.23 0 0 0-5.023.192 64.115 64.115 0 0 0-49.776 30.784 237.575 237.575 0 0 0-34.097 122.656c0 28.848 5.183 56.944 15.008 83.216-10.464 11.632-16.496 26.848-16.496 42.912v2.288c0 62.689 24.784 120.864 65.936 164.464-2.368 10.976-1.84 22.464 1.776 33.472 14.193 43.183 40.033 80.4 73.537 108.75-22.497 5.009-45.712 7.537-69.409 7.537-12.528 0-24.72-.688-36.256-2.097-2.56-.32-5.088-.432-7.632-.432-26.88 0-51.28 16.944-60.336 42.784-9.936 28.32 1.089 59.712 26.56 75.568 94.529 58.817 203.712 89.872 315.712 89.872 364.032 0 583.008-284.976 587.264-563.344a429.584 429.584 0 0 0 78.448-85.152 63.392 63.392 0 0 0 12.96-38.496c0-21.776-10.895-41.024-27.487-52.593 7.184-24.624-1.009-51.28-21.009-67.568-11.68-9.504-26-14.336-40.4-14.336a63.75 63.75 0 0 0-31.968 8.56c-21.152 12.193-43.776 21.841-67.6 28.786-43.105-32.432-96.545-50.496-151.425-50.497z' /></svg>
 }
 
-function Nav () {
+function Nav ({ menuStyle, setMenuStyle }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false)
-
-  const toggleMenu = () => {
+  const navElementsRef = useRef(null)
+  const toggleMenu = useCallback(() => {
     setIsMenuVisible((prev) => !prev)
-  }
+  }, [])
+
+  const handleMouseEnter = useCallback((element) => () => {
+    const { left, top, width, height } = element.getBoundingClientRect()
+
+    setMenuStyle({
+      transform: `translate(${left}px, ${top}px)`,
+      width: `${width}px`,
+      height: `${height}px`,
+      opacity: 1,
+      visibility: 'visible'
+    })
+  }, [])
+
+  const handleMouseLeave = useCallback(() => {
+    setMenuStyle((prevStyle) => ({
+      ...prevStyle,
+      opacity: 0,
+      visibility: 'hidden'
+    }))
+  }, [])
+
+  useEffect(() => {
+    const navElements = navElementsRef.current.querySelectorAll('li')
+
+    navElements.forEach((element) => {
+      element.addEventListener('mouseenter', handleMouseEnter(element))
+      element.addEventListener('mouseleave', handleMouseLeave)
+    })
+
+    return () => {
+      navElements.forEach((element) => {
+        element.removeEventListener('mouseenter', handleMouseEnter)
+        element.removeEventListener('mouseleave', handleMouseLeave)
+      })
+    }
+  }, [handleMouseEnter, handleMouseLeave])
 
   return (
     <>
@@ -28,7 +64,7 @@ function Nav () {
           <span className='line w-100' />
         </div>
       </div>
-      <div className={`menu__content fixed flex flex-column justify-between ${isMenuVisible && 'show-menu'}`}>
+      <div className={`menu__content fixed flex flex-column justify-between ${isMenuVisible ? 'show-menu' : ''}`}>
         <div className='menu__header container flex align-center justify-between'>
           <div className='logo flex align-center'>
             <img
@@ -46,7 +82,7 @@ function Nav () {
           </div>
         </div>
         <nav className='container'>
-          <ul className='flex align-center flex-column-sm text-center'>
+          <ul className='flex align-center flex-column-sm text-center' ref={navElementsRef}>
             <li className='w-100'><a href='#about-me' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Sobre Mí</a></li>
             <li className='w-100'><a href='#projects' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Proyectos</a></li>
             <li className='w-100'><a href='#experience' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Experiencia</a></li>

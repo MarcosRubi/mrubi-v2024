@@ -25,7 +25,7 @@ function Timeline () {
                       <span className='block'>{timeline.date}</span>
                       <h3>{timeline.cardTitle}</h3>
                       {timeline.cardDetailedText.map((text, index) => (
-                        <p key={index}>{text}</p>
+                        <p dangerouslySetInnerHTML={{ __html: text }} key={index} />
                       ))}
                     </div>
                   </div>

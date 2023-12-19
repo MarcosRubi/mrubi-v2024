@@ -3,7 +3,7 @@ import Technologies from './Technologies'
 
 function Card ({ project }) {
   return (
-    <div className='project__card'>
+    <article className='project__card'>
       <a
         href={`/proyecto/${project.slug}`}
         className='project__img block'
@@ -21,13 +21,13 @@ function Card ({ project }) {
         <a href={`/proyecto/${project.slug}`}>
           <h3>{project.title}</h3>
         </a>
-        <div className='flex align-center justify-between flex-wrap'>
+        <header className='flex align-center justify-between flex-wrap'>
           <Technologies technologies={project.technologies} />
           <Date date={project.endDate} />
-        </div>
+        </header>
         <p dangerouslySetInnerHTML={{ __html: project.description }} />
       </div>
-    </div>
+    </article>
   )
 }
 

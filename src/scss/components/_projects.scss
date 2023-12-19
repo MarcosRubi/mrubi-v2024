@@ -1,5 +1,4 @@
 .projects {
-
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -12,6 +11,7 @@
 
   p {
     margin: 1rem auto;
+    max-width: 600px;
   }
 
   .filters {
@@ -175,20 +175,13 @@
       transition: background-color 0.3s ease-in-out;
       border-radius: 0.25rem;
       font-weight: bold;
+      color: var(--color-hover);
 
-      &:nth-child(odd) {
-        color: var(--color-hover);
-      }
-
-      &:nth-child(even) {
-        color: var(--color-link);
-      }
     }
   }
 
   .date {
     background-color: var(--bg-footer);
-    transition: background-color 0.3s ease-in-out;
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 0.9rem;
@@ -220,7 +213,7 @@
   }
 
   &__card {
-    border: 1px solid var(--bg-footer);
+    border: 1px solid var(--border);
     transition: border 0.3s ease-in-out;
     border-radius: 0.25rem;
     overflow: hidden;

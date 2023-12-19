@@ -9,6 +9,7 @@
     --text-color: #212121;
     --bg-footer: rgb(207, 216, 220);
     --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --border: #9e9e9e;
 }
 
 [data-theme]:not([data-theme="default-light"]):not([data-theme="purple-light"]):not([data-theme="blue-light"]):not([data-theme="green-light"]) {
@@ -16,6 +17,7 @@
     --text-color: #fffcff;
     --bg-footer: #212121;
     --shadow: rgba(150, 150, 193, 0.25) 0px -3px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+    --border: #ffffff38;
 }
 
 [data-theme="default-light"] {
@@ -26,7 +28,7 @@
 }
 
 [data-theme="default-dark"] {
-    --color-link: #78a6c8;
+    --color-link: #8bc0e8;
     --color-hover: #dd2e2e;
     --color-link-alpha: rgba(100, 166, 208, 0.8);
     --color-hover-alpha: rgba(213, 32, 32, 0.8);

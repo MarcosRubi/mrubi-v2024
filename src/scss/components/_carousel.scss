@@ -1,4 +1,15 @@
 .carousel-project {
+    ::-webkit-scrollbar {
+        background: var(--bg-footer);
+        border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(var(--color-hover-alpha),
+                var(--color-hover));
+        border-radius: 6px;
+    }
+
     &-images {
         padding-top: 20px;
     }
@@ -52,6 +63,7 @@
         .carousel-main-image {
             min-width: 881px;
             justify-content: space-between;
+
             .btn {
                 display: block;
                 position: sticky;
