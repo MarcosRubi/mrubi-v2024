@@ -15,8 +15,18 @@ export const IconTwitter = () => {
 function Nav ({ menuStyle, setMenuStyle }) {
   const [isMenuVisible, setIsMenuVisible] = useState(false)
   const navElementsRef = useRef(null)
-  const toggleMenu = useCallback(() => {
+  const toggleMenu = useCallback((event) => {
     setIsMenuVisible((prev) => !prev)
+    const target = event.target
+    if (target.tagName === 'A' && target.getAttribute('href').startsWith('#')) {
+      event.preventDefault()
+      const hash = target.getAttribute('href')
+      const targetElement = document.querySelector(hash)
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' })
+        toggleMenu()
+      }
+    }
   }, [])
 
   const handleMouseEnter = useCallback((element) => () => {
@@ -83,11 +93,11 @@ function Nav ({ menuStyle, setMenuStyle }) {
         </div>
         <nav className='container'>
           <ul className='flex align-center flex-column-sm text-center' ref={navElementsRef}>
-            <li className='w-100'><a href='#about-me' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Sobre Mí</a></li>
-            <li className='w-100'><a href='#projects' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Proyectos</a></li>
-            <li className='w-100'><a href='#experience' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Experiencia</a></li>
-            <li className='w-100'><a href='#my-process' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Mi Proceso</a></li>
-            <li className='w-100'><a href='#contact' className='w-100 inline-block' onClick={() => { toggleMenu() }}>Contactar</a></li>
+            <li className='w-100'><a href='/#about-me' className='w-100 inline-block' onClick={(event) => { toggleMenu(event) }}>Sobre Mí</a></li>
+            <li className='w-100'><a href='/#projects' className='w-100 inline-block' onClick={(event) => { toggleMenu(event) }}>Proyectos</a></li>
+            <li className='w-100'><a href='/#experience' className='w-100 inline-block' onClick={(event) => { toggleMenu(event) }}>Experiencia</a></li>
+            <li className='w-100'><a href='/#my-process' className='w-100 inline-block' onClick={(event) => { toggleMenu(event) }}>Mi Proceso</a></li>
+            <li className='w-100'><a href='/#contact' className='w-100 inline-block' onClick={(event) => { toggleMenu(event) }}>Contactar</a></li>
           </ul>
         </nav>
         <div className='menu__footer'>

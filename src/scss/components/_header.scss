@@ -239,16 +239,6 @@
         }
     }
 
-    #menu-backdrop {
-        position: absolute;
-        background-color: var(--color-hover-alpha);
-        border-radius: 0.5rem;
-        transition: all 0.3s ease-in-out;
-        z-index: 10;
-        transform: translate(0, 0);
-        top: 0;
-    }
-
 }
 
 
@@ -311,6 +301,15 @@
             input {
                 min-width: 80px;
             }
+        }
+        #menu-backdrop {
+            position: absolute;
+            background-color: var(--color-hover-alpha);
+            border-radius: 0.5rem;
+            transition: all 0.3s ease-in-out;
+            z-index: 10;
+            transform: translate(0, 0);
+            top: 0;
         }
     }
 }
