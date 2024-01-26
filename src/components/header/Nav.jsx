@@ -65,6 +65,21 @@ function Nav ({ setMenuStyle }) {
     }
   }, [handleMouseEnter, handleMouseLeave])
 
+  useEffect(() => {
+    const handleNavigation = () => {
+      // Puedes realizar alguna lógica adicional después de la navegación, si es necesario
+      console.log('Página cargada completamente.')
+    }
+
+    // Escucha el evento "load" en la ventana para detectar cuando la página se ha cargado completamente
+    window.addEventListener('load', handleNavigation)
+
+    return () => {
+      // Limpia el evento al desmontar el componente
+      window.removeEventListener('load', handleNavigation)
+    }
+  }, [])
+
   return (
     <>
       <div className='menu__hamburguer flex align-center'>

@@ -233,8 +233,18 @@
         }
 
         svg {
+            stroke: var(--text-color);
+        }
+    }
+
+    &.sticky .menu__setting {
+        svg {
             stroke: var(--always-white);
         }
+    }
+
+    &.sticky .line {
+        background-color: var(--always-white);
     }
 
 }
@@ -242,8 +252,14 @@
 
 @mixin header-768 {
     .menu {
-        &.sticky::after {
-            height: 100%;
+        &.sticky {
+            &::after {
+                height: 100%;
+            }
+
+            nav a {
+                color: var(--always-white);
+            }
         }
 
         &__content {
@@ -291,6 +307,12 @@
             display: none;
         }
 
+        &__setting {
+            svg {
+                stroke: var(--always-white);
+            }
+        }
+
         &__preset-colors {
             left: 0%;
         }
@@ -300,6 +322,7 @@
                 min-width: 80px;
             }
         }
+
         #menu-backdrop {
             position: absolute;
             background-color: var(--color-hover-alpha);
@@ -320,10 +343,11 @@
                 padding: .5rem 1rem;
             }
         }
+
         &::before {
             max-height: 71px;
         }
-    
+
         &.sticky::after {
             max-height: 71px;
         }

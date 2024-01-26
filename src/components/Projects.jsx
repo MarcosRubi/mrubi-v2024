@@ -37,9 +37,9 @@ function Projects () {
   return (
     <section className='projects'>
       <div className='container' id='projects'>
-        <h2 className='text-center'>Proyectos</h2>
+        <h2>Proyectos</h2>
         <div className='description'>
-          <p>Entre los más de 50 proyectos que he realizado, he elegido los más relevantes.</p>
+          <p>Entre los más de <span>50</span> proyectos que he realizado, he elegido los más relevantes.</p>
           <p>Ninguno fue realizado mediante tutoriales, plantillas web, ni se trata de trabajos universitarios.</p>
         </div>
 

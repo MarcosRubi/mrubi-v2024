@@ -36,6 +36,7 @@
     background-position: bottom;
     z-index: -1;
     transition: transform 0.5s ease;
+    filter: blur(3px);
   }
 
   &::after {
