@@ -1,6 +1,13 @@
 [
     {
         "position": "Desarrollador Web",
+        "startDate": "18 Ene 2024",
+        "endDate": "Actualidad",
+        "company": "Creativa Studios",
+        "activities": "Como parte fundamental de mi rol, superviso el desarrollo completo de un sistema educativo, abarcando tareas desde la maquetación y validaciones hasta el diseño de la base de datos y la configuración de los endpoints. Adicionalmente, tengo a mi cargo el importante proyecto de rediseñar el sitio web de la empresa, asegurando coherencia y funcionalidad en cada aspecto del proceso. "
+    },
+    {
+        "position": "Desarrollador Web",
         "startDate": "20 Ago 2023",
         "endDate": "30 Nov 2023",
         "company": "Freelancer",

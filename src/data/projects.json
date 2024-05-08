@@ -1,6 +1,142 @@
 [
   {
-    "id": 2,
+    "id": 9,
+    "title": "HernanStore",
+    "slug": "hernan-store",
+    "description": "Aplicación web para el control de préstamos.",
+    "technologies": [
+      "HTML & CSS",
+      "AdminLTE",
+      "JavaScript",
+      "PHP",
+      "AJAX",
+      "MySQL",
+      "POO"
+    ],
+    "startDate": "2023-08-15",
+    "endDate": "2023-11-18",
+    "learning": "Utilicé <a href='https://adminlte.io/' target='_blank'>AdminLTE</a> como base. La gestión de grandes cantidades de datos relacionados con clientes, préstamos y transacciones me ha permitido mejorar mis habilidades en el diseño de bases de datos y la optimización de consultas. También que la generación de informes y gráficos para representar el estado financiero de los préstamos me ha enseñado cómo comunicar datos de manera efectiva a través de visualizaciones.",
+    "difficulties": "Calcular correctamente los pagos pendientes y los intereses en función de las fechas y las tasas de interés, especialmente porque son diferentes esquemas de pago (cuotas fijas o variables). Además, el crear informes precisos que reflejen el estado actual de los préstamos y los pagos.",
+    "urlDemo": "",
+    "urlRepo": "",
+    "routeImages": [
+      {
+        "id": 1,
+        "url": "/images/projects/pintelog/preview.webp"
+      },
+      {
+        "id": 2,
+        "size": "vista de actualizar perfil",
+        "url": "/images/projects/pintelog/actualizar-perfil.webp"
+      },
+      {
+        "id": 3,
+        "size": "vista de actualizar préstamo",
+        "url": "/images/projects/pintelog/actualizar-prestamo.webp"
+      },
+      {
+        "id": 4,
+        "size": "vista de caja chica",
+        "url": "/images/projects/pintelog/caja-chica.webp"
+      },
+      {
+        "id": 5,
+        "size": "vista de cuotas atrasadas",
+        "url": "/images/projects/pintelog/cuotas-atrasadas.webp"
+      },
+      {
+        "id": 6,
+        "size": "vista de cuotas próximas a pagar",
+        "url": "/images/projects/pintelog/cuotas-proximas-a-pagar.webp"
+      },
+      {
+        "id": 7,
+        "size": "vista sobre detalles de un préstamo",
+        "url": "/images/projects/pintelog/detalles-del-prestamo.webp"
+      },
+      {
+        "id": 8,
+        "size": "vista de listado de clientes",
+        "url": "/images/projects/pintelog/listado-de-clientes.webp"
+      },
+      {
+        "id": 9,
+        "size": "vista de listado de empleados",
+        "url": "/images/projects/pintelog/listado-de-empleados.webp"
+      },
+      {
+        "id": 10,
+        "size": "vista de listado de inversores",
+        "url": "/images/projects/pintelog/listado-de-inversores.webp"
+      },
+      {
+        "id": 11,
+        "size": "vista de nuevo cliente",
+        "url": "/images/projects/pintelog/nuevo-cliente.webp"
+      },
+      {
+        "id": 12,
+        "size": "vista de nuevo préstamo",
+        "url": "/images/projects/pintelog/nuevo-prestamo.webp"
+      },
+      {
+        "id": 13,
+        "size": "vista de listado de préstamos completados",
+        "url": "/images/projects/pintelog/prestamos-completados.webp"
+      },
+      {
+        "id": 14,
+        "size": "vista de listado de préstamos en proceso",
+        "url": "/images/projects/pintelog/prestamos-en-proceso.webp"
+      },
+      {
+        "id": 15,
+        "size": "vista de reporte",
+        "url": "/images/projects/pintelog/reporte.webp"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Rubi Store",
+    "slug": "rubi-store",
+    "description": "Demo para un salón de belleza.",
+    "technologies": [
+      "HTML & CSS",
+      "SCSS",
+      "JavaScript",
+      "Astro"
+    ],
+    "startDate": "2024-03-28",
+    "endDate": "2024-03-31",
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://rubi-store-homepage.vercel.app/",
+    "urlRepo": "https://github.com/MarcosRubi/rubi-store-homepage",
+    "routeImages": [
+      {
+        "id": 1,
+        "url": "/images/projects/preview/rubi-store-preview.webp"
+      },
+      {
+        "id": 2,
+        "size": "Móvil",
+        "url": "/images/projects/mobileDesign/rubi-store-sm.webp"
+      },
+      {
+        "id": 3,
+        "size": "Tablet",
+        "url": "/images/projects/tabletDesign/rubi-store-md.webp"
+      },
+      {
+        "id": 4,
+        "size": "Escritorio",
+        "url": "/images/projects/desktopDesign/rubi-store-xl.webp"
+      }
+    ]
+  },
+  {
+    "id": 11,
     "title": "Poppo's Pizzeria",
     "slug": "poppos-pizzeria",
     "description": "Demo para una pizzería en Nueva York.",
@@ -23,20 +159,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/poppops-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/poppops-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/poppops-xl.webp"
       }
     ]
   },
   {
-    "id": 3,
+    "id": 12,
     "title": "Bookmark landing page",
     "slug": "bookmark-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158' target='_blank'>Frontend Mentor</a>.",
@@ -58,20 +197,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/bookmark-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/bookmark-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/bookmark-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 4,
+    "id": 13,
     "title": "Loopstudios landing page",
     "slug": "loopstudios-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw' target='_blank'>Frontend Mentor</a>.",
@@ -92,20 +234,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/loopstudios-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/loopstudios-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/loopstudios-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 5,
+    "id": 14,
     "title": "Four card feature section",
     "slug": "four-card-feature-section",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK' target='_blank'>Frontend Mentor</a>.",
@@ -126,20 +271,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/four-card-feature-section-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/four-card-feature-section-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/four-card-feature-section-xl.webp"
       }
     ]
   },
   {
-    "id": 6,
+    "id": 15,
     "title": "Todo app",
     "slug": "todo-app",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW' target='_blank'>Frontend Mentor</a>.",
@@ -161,20 +309,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/todo-app-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/todo-app-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/todo-app-xl.webp"
       }
     ]
   },
   {
-    "id": 7,
+    "id": 16,
     "title": "Notifications page",
     "slug": "notification-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC' target='_blank'>Frontend Mentor</a>.",
@@ -196,20 +347,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/notifications-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/notifications-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/notifications-page-xl.webp"
       }
     ]
   },
   {
-    "id": 8,
+    "id": 17,
     "title": "Job listings with filtering",
     "slug": "job-listenings-with-filtering",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
@@ -231,20 +385,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/job-listing-with-filtering-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/job-listing-with-filtering-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/job-listing-with-filtering-xl.webp"
       }
     ]
   },
   {
-    "id": 9,
+    "id": 18,
     "title": "Clipboard landing page",
     "slug": "clipboard-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>.",
@@ -265,20 +422,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/clipboard-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/clipboard-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/clipboard-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 10,
+    "id": 19,
     "title": "Tip calculator app",
     "slug": "tip-calculator-app",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>.",
@@ -300,20 +460,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/tip-calculator-app-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/tip-calculator-app-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/tip-calculator-app-xl.webp"
       }
     ]
   },
   {
-    "id": 11,
+    "id": 20,
     "title": "Manage landing page",
     "slug": "manage-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>.",
@@ -335,20 +498,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/manage-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/manage-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/manage-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 12,
+    "id": 21,
     "title": "Advice generator app",
     "slug": "advice-generator-app",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API.",
@@ -371,20 +537,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/advice-generator-app-with-react-and-tailwind-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/advice-generator-app-with-react-and-tailwind-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/advice-generator-app-with-react-and-tailwind-xl.webp"
       }
     ]
   },
   {
-    "id": 13,
+    "id": 22,
     "title": "Social media dashboard with theme switcher",
     "slug": "social-media-dashboard-with-theme-switcher",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H' target='_blank'>Frontend Mentor</a>.",
@@ -405,20 +574,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/social-media-dashboard-with-theme-switcher-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/social-media-dashboard-with-theme-switcher-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/social-media-dashboard-with-theme-switcher-xl.webp"
       }
     ]
   },
   {
-    "id": 14,
+    "id": 23,
     "title": "Interactive card details form",
     "slug": "interactive-card-details-form",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a>.",
@@ -439,20 +611,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/interactive-card-details-form-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/interactive-card-details-form-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/interactive-card-details-form-xl.webp"
       }
     ]
   },
   {
-    "id": 15,
+    "id": 24,
     "title": "Crowdfunding product page",
     "slug": "crowdfunding-product-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>.",
@@ -473,20 +648,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/crowdfunding-product-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/crowdfunding-product-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/crowdfunding-product-page-xl.webp"
       }
     ]
   },
   {
-    "id": 16,
+    "id": 25,
     "title": "Fylo dark theme landing page",
     "slug": "fylo-dark-theme-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>.",
@@ -507,20 +685,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/fylo-dark-theme-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/fylo-dark-theme-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/fylo-dark-theme-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 17,
+    "id": 26,
     "title": "Pintelog",
     "slug": "pintelog",
     "description": "Red social de fotos.",
@@ -538,7 +719,7 @@
     "endDate": "2022-07-07",
     "learning": "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails.",
     "difficulties": "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos.",
-    "urlDemo": "https://pintelog-app.000webhostapp.com/",
+    "urlDemo": "https://demo-pintelog.000webhostapp.com/",
     "urlRepo": "https://github.com/MarcosRubi/pintelog",
     "routeImages": [
       {
@@ -547,20 +728,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/pintelog-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/pintelog-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/pintelog-xl.webp"
       }
     ]
   },
   {
-    "id": 18,
+    "id": 27,
     "title": "StudyInk",
     "slug": "studyink",
     "description": "Plantilla para una web de educación.",
@@ -581,20 +765,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/study-ink-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/study-ink-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/study-ink-xl.webp"
       }
     ]
   },
   {
-    "id": 19,
+    "id": 28,
     "title": "Charity",
     "slug": "charity",
     "description": "Plantilla para una web de donativos.",
@@ -615,20 +802,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/charity-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/charity-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/charity-xl.webp"
       }
     ]
   },
   {
-    "id": 20,
+    "id": 29,
     "title": "Inveto",
     "slug": "inveto",
     "description": "Plantilla para una web de cursos financieros.",
@@ -649,20 +839,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/inveto-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/inveto-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/inveto-xl.webp"
       }
     ]
   },
   {
-    "id": 21,
+    "id": 30,
     "title": "Insure Landing Page",
     "slug": "insure-landing-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8' target='_blank'>Frontend Mentor</a>.",
@@ -683,20 +876,23 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/insure-landing-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/insure-landing-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/insure-landing-page-xl.webp"
       }
     ]
   },
   {
-    "id": 22,
+    "id": 31,
     "title": "E-commerce Product Page",
     "slug": "e-commerce-product-page",
     "description": "Desafío de <a href='https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6' target='_blank'>Frontend Mentor</a>.",
@@ -704,7 +900,7 @@
       "HTML & CSS",
       "SCSS",
       "JavaScript",
-      "React", 
+      "React",
       "Astro"
     ],
     "startDate": "2023-11-29",
@@ -720,14 +916,17 @@
       },
       {
         "id": 2,
+        "size": "Móvil",
         "url": "/images/projects/mobileDesign/e-commerce-product-page-sm.webp"
       },
       {
         "id": 3,
+        "size": "Tablet",
         "url": "/images/projects/tabletDesign/e-commerce-product-page-md.webp"
       },
       {
         "id": 4,
+        "size": "Escritorio",
         "url": "/images/projects/desktopDesign/e-commerce-product-page-xl.webp"
       }
     ]

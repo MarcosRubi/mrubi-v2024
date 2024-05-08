@@ -36,6 +36,7 @@
         width: 100%;
         pointer-events: none;
         max-height: 56px;
+        display: none;
     }
 
     &::after {
@@ -253,6 +254,9 @@
 @mixin header-768 {
     .menu {
         &.sticky {
+            &::before {
+                display: block;
+            }
             &::after {
                 height: 100%;
             }

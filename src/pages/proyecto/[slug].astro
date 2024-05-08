@@ -37,21 +37,27 @@ const project = dataProjects.filter((project) => project.slug === slug)[0];
                         <Technologies technologies={project.technologies} />
                     </div>
                     <div class="buttons">
-                        <h4>Enlaces</h4>
-                        <div class="flex flex-wrap">
-                            <a
-                                href={project.urlDemo}
-                                target="_blank"
-                                class="btn btn-primary"
-                                rel="noreferrer"><span>Ver Demo</span></a
-                            >
-                            <a
-                                href={project.urlRepo}
-                                target="_blank"
-                                class="btn btn-secondary"
-                                rel="noreferrer"><span>Ver Código</span></a
-                            >
-                        </div>
+                        {
+                            project.urlDemo !== "" && (
+                                <>
+                                <h4>Enlaces</h4>
+                                <div class="flex flex-wrap">
+                                <a
+                                    href={project.urlDemo}
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    rel="noreferrer"><span>Ver Demo</span>
+                                </a>
+                                <a
+                                    href={project.urlRepo}
+                                    target="_blank"
+                                    class="btn btn-secondary"
+                                    rel="noreferrer"><span>Ver Código</span>
+                                </a>
+                                </div>
+                                    </>
+                                )
+                            }
                     </div>
                     <div class="dates">
                         <h4>Tiempo de desarrollo</h4>

@@ -57,6 +57,12 @@
         "date": "2023",
         "cardTitle": "Inicio del mundo laboral.",
         "cardDetailedText": ["Durante seis meses, desempeñé labores en Sortos Travel Multiservices mientras llevaba a cabo mi servicio social en el CNR y simultáneamente proseguía con mis estudios de último año.", "Luego me contactaron para realizar un sistema de control de préstamos el cual termine en noviembre."],
+        "url": "/images/timeline/inicio-mundo-laboral.webp"
+    },
+    {
+        "date": "2024",
+        "cardTitle": "Nuevo año, nuevo trabajo.",
+        "cardDetailedText": ["En enero, comencé como pasante en Creativa Studios, donde estoy desarrollando mis habilidades en desarrollo web y adquiriendo experiencia práctica en un entorno profesional. Mi pasantía concluirá en agosto de este año, durante la cual estoy involucrado en diversos proyectos de desarrollo y diseño web."],
         "url": "/images/timeline/actualidad.webp"
     }
     

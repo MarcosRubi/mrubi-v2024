@@ -313,6 +313,9 @@ section {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: 10;
 }
+.max-w-md{
+    max-width: 600px;
+}
 
 @mixin base-768{
     section .container,footer .container {
