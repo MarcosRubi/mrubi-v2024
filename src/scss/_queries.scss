@@ -1,30 +1,41 @@
+@use "animations";
+@use "base";
+@use "components/about-me";
+@use "components/banner";
+@use "components/carousel";
+@use "components/experience";
+@use "components/footer";
+@use "components/header";
+@use "components/projects";
+@use "components/timeline";
+
 @media (min-width:768px) {
-    @include base-768;
-    @include header-768;
-    @include banner-768;
-    @include timeline-768;
-    @include projects-768;
-    @include footer-768;
-    @include animations-768;
+    @include base.base-768;
+    @include header.header-768;
+    @include banner.banner-768;
+    @include timeline.timeline-768;
+    @include projects.projects-768;
+    @include footer.footer-768;
+    @include animations.animations-768;
 }
 @media (min-width:1024px) {
-    @include base-1024;
-    @include header-1024;
-    @include banner-1024;
-    @include about-me-1024;
-    @include experience-1024;
-    @include projects-1024;
-    @include carousel-1024;
-    @include footer-1024;
+    @include base.base-1024;
+    @include header.header-1024;
+    @include banner.banner-1024;
+    @include about-me.about-me-1024;
+    @include experience.experience-1024;
+    @include projects.projects-1024;
+    @include carousel.carousel-1024;
+    @include footer.footer-1024;
 }
 @media (min-width:1200px) {
-    @include base-1200;
-    @include projects-1200;
-    @include experience-1200;
-    @include footer-1200;
+    @include base.base-1200;
+    @include projects.projects-1200;
+    @include experience.experience-1200;
+    @include footer.footer-1200;
 }
 
 @media (min-width:1440px) {
-    @include animations-1440;
-    @include projects-1440;
+    @include animations.animations-1440;
+    @include projects.projects-1440;
 }
