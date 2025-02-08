@@ -1,47 +1,50 @@
 .timeline {
-    h2{
-        margin-bottom: 1rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  li.splide__slide {
+    background-color: var(--bg-footer);
+  }
+
+  .img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    li.splide__slide  {
-        background-color: var(--bg-footer);
+  }
+
+  .content {
+    padding: 1rem;
+
+    span {
+      color: var(--color-hover);
+      font-size: 1.25rem;
+      font-weight: bold;
     }
 
-    .img {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    h3,
+    p {
+      margin: 1rem 0;
     }
-
-    .content {
-        padding: 1rem;
-
-        span {
-            color: var(--color-hover);
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
-
-        h3,
-        p {
-            margin: 1rem 0;
-        }
+    p {
+      max-width: 95%;
     }
-    .img,
-    .content{
-        flex-basis: 50%;
-    }
+  }
+  .img,
+  .content {
+    flex-basis: 50%;
+  }
 }
 
 @mixin timeline-768 {
-    .timeline {
-        .flex-column {
-            flex-direction: row;
-            height: 100%;
-        }
-        .content{
-            align-self: center;
-        }
+  .timeline {
+    .flex-column {
+      flex-direction: row;
+      height: 100%;
     }
+    .content {
+      align-self: center;
+    }
+  }
 }

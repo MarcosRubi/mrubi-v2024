@@ -45,27 +45,27 @@ function ToggleTheme () {
   const isDark = theme === 'dark'
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', `${color}-dark`)
+    document.documentElement.setAttribute('data-theme', `${color}-${theme}`)
   }, [theme, color])
 
-  // return (
-  //   <div className='menu__toggle relative'>
-  //     <label htmlFor='toggle-theme' aria-label='Cambiar tema oscuro'>
-  //       <input
-  //         className='w-100'
-  //         type='checkbox'
-  //         name='toggle-theme'
-  //         id='toggle-theme'
-  //         onClick={() => {
-  //           setTheme()
-  //         }}
-  //         defaultChecked={isDark}
-  //       />
-  //       <IconSun />
-  //       <IconMoon />
-  //     </label>
-  //   </div>
-  // )
+  return (
+    <div className='menu__toggle relative'>
+      <label htmlFor='toggle-theme' aria-label='Cambiar tema oscuro'>
+        <input
+          className='w-100'
+          type='checkbox'
+          name='toggle-theme'
+          id='toggle-theme'
+          onClick={() => {
+            setTheme()
+          }}
+          defaultChecked={isDark}
+        />
+        <IconSun />
+        <IconMoon />
+      </label>
+    </div>
+  )
 }
 
 export default ToggleTheme

@@ -2,11 +2,15 @@ import ToggleTheme from './header/ToggleTheme'
 import SettingTheme from './header/SettingTheme'
 import Nav from './header/Nav'
 import { useState, useRef, useEffect } from 'react'
+import { useThemeStore } from '../store/themeStore'
 
 function Header () {
   let timeout
   const [sticky, setSticky] = useState('')
   const menuBackdropRef = useRef(null)
+  const { theme } = useThemeStore((state) => state)
+  const isLightTheme = theme === 'light'
+  const isInProyectoRoute = window.location.pathname.includes('/proyecto/')
   const [menuStyle, setMenuStyle] = useState({
     transform: 'translate(0, 0)',
     opacity: 0,
@@ -22,17 +26,21 @@ function Header () {
   }
 
   const getScroll = () => {
-    window.scrollY > 0 ? setSticky('sticky') : setSticky('')
+    if ((isLightTheme && isInProyectoRoute) || window.scrollY > 0) {
+      setSticky('sticky')
+    } else {
+      setSticky('')
+    }
   }
 
   useEffect(() => {
-    handleScroll() // Llama a handleScroll para configurar el estado inicial
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [theme])
 
   return (
     <header className={`menu fixed w-100 ${sticky}`}>

@@ -73,13 +73,18 @@ textarea {
   input:focus ~ .placeholder-icon,
   input:valid ~ .placeholder-icon,
   textarea:focus ~ .placeholder-icon,
-  textarea:valid ~ .placeholder-icon {
+  textarea:valid ~ .placeholder-icon,
+  input:not(:placeholder-shown) ~ .placeholder-icon,
+  textarea:not(:placeholder-shown) ~ .placeholder-icon  {
     color: var(--color-hover);
   }
+  
   input:focus ~ .placeholder,
   input:valid ~ .placeholder,
   textarea:focus ~ .placeholder,
-  textarea:valid ~ .placeholder {
+  textarea:valid ~ .placeholder,
+  input:not(:placeholder-shown) ~ .placeholder,
+  textarea:not(:placeholder-shown) ~ .placeholder  {
     color: var(--txt-color);
     transform: translate(-1.9rem, -1.5rem);
     font-size: 0.9rem;
